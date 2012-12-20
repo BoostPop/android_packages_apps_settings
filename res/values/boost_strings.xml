@@ -14,6 +14,8 @@
     <string name="font_size_sample">Sample</string>
     <string name="add">Add</string>
     <string name="choose_app">Choose app</string>
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">RAM</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
