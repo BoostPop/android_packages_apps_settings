@@ -57,4 +57,12 @@
     <string name="led_color_green">Verde</string>
     <string name="led_color_red">Rosso</string>
     <string name="led_color_blue">Blu</string>
+
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">ADB over netowrk</string>
+    <string name="adb_over_network_summary">Abilita debug sul procollo TCP/IP per le interfacce di network (Wi-Fi, USB networks). Questa impostazione si resetta al reboot</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">ATTENZIONE: Quandon ADB over network è abilitato, il tuo telefono non èprotetto da intrusioni sulle connessioni, incluso il traffico dati GSM!\n\nUsa questa opzione solo quando sei connesso un network sicuro.\n\nVuoi davvero abilitare questa funzione?</string>
+
+
 </resources>
