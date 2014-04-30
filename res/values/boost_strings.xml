@@ -35,6 +35,10 @@
     <string name="device_category_title">Device</string>
     <string name="system_category_title">System</string>
 
+    <!-- others -->
+    <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">Accept all file types</string>
+
     <!-- VOLUME ROCKER -->
     <!-- Volume wake up -->
     <string name="volume_wake_title">Volume rocker wake</string>
