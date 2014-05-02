@@ -11,6 +11,7 @@
     <string name="enabled">Enabled</string>
     <string name="default_string">Default</string>
     <string name="general_string">General</string>
+    <string name="font_size_sample">Sample</string>
 
     <!-- Boost Settings Titles -->
     <string name="volume_rocker_title">Volume rocker wake</string>
