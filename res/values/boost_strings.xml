@@ -6,5 +6,6 @@
     <string name="boost_version_default">Unknown</string>
     <string name="cpu_info">CPU</string>
     <string name="mem_info">RAM</string>
+    <string name="font_size_sample">Sample</string>
 
 </resources>
