@@ -2,9 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- General strings -->
-    <string name="boost_version">Boostpop version</string>
+    <string name="boost_version">Versione BoostPop</string>
     <string name="boost_version_default">Unknown</string>
-    <string name="cpu_info">CPU</string>
-    <string name="mem_info">RAM</string>
 
 </resources>
