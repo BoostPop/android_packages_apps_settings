@@ -202,5 +202,17 @@
     <string name="doze_timeout_title">Ambient display timeout schermo</string>
     <string name="doze_timeout_summary">Tempo schermo acceso durante ambient display</string>
 
+    <!-- Expanded Desktop -->
+    <string name="power_menu_expanded_desktop">Desktop espanso</string>
+    <string name="power_menu_expanded_desktop_summary">Configurazione per-app per desktop espanso</string>
+    <string name="expanded_hide_nothing">Non nascondere</string>
+    <string name="expanded_hide_status">Nascondi status bar</string>
+    <string name="expanded_hide_navigation">Nascondi barra navigazione</string>
+    <string name="expanded_hide_both">Nascondi entrambe</string>
+    <string name="expanded_nothing_to_show">Per aggiungere una configurazione per-app per desktop espanso, abilita "Abilita per tutti" su off</string>
+    <string name="expanded_desktop_state">Desktop espanso</string>
+    <string name="expanded_enabled_for_all">Abilita per tutti</string>
+    <string name="expanded_user_configurable">Configurabile</string>
+
 </resources>
 
