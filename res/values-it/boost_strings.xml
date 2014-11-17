@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- build date-->
+    <string name="build_date">Data build Linearboost</string>
+    <string name="build_date_default">2014-01-01-0000</string>
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="attention">Attenzione</string>
+    <string name="enabled">Abilitato</string>
+    <string name="default_string">Default</string>
+
+</resources>
