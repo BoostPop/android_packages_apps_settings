@@ -27,5 +27,11 @@
 	        android:title="@string/navigation_bar_title"
                 android:summary="@string/navigation_bar_summary" />
 
+        <PreferenceScreen
+                android:key="led_settings"
+                android:fragment="com.android.settings.boost.LedSettings"
+                android:title="@string/led_settings_title"
+                android:summary="@string/led_settings_summary" />
+
 </PreferenceScreen>
 
