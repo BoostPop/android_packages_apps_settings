@@ -10,6 +10,7 @@
     <string name="attention">Attention</string>
     <string name="enabled">Enabled</string>
     <string name="default_string">Default</string>
+    <string name="general_string">General</string>
 
     <!-- Boost Settings Titles -->
     <string name="volume_rocker_title">Volume rocker wake</string>
@@ -19,6 +20,8 @@
     <string name="tweaks_settings_title">Tweaks</string>
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="navigation_bar_summary">Navigation bar customizzation</string>
+    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_summary">Mod your status bar</string>
 
     <!-- build date-->
     <string name="build_date">Linearboost build date</string>
@@ -76,5 +79,10 @@
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">0dp (hide)</string>
+
+    <!-- STATUS BAR -->
+    <!-- Statusbar native battery percent -->
+    <string name="status_bar_native_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_native_battery_percentage_summary">Show hidden percentage</string>
 
 </resources>

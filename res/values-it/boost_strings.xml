@@ -11,6 +11,7 @@
     <string name="attention">Attenzione</string>
     <string name="enabled">Abilitato</string>
     <string name="default_string">Default</string>
+    <string name="general_string">Generale</string>
 
     <!-- build date-->
     <string name="build_date">Linearboost build date</string>
@@ -22,6 +23,7 @@
     <string name="tweaks_settings_summary">Tweaks per migliorare la Nexus experience</string>
     <string name="navigation_bar_title">Barra navigazione</string>
     <string name="navigation_bar_summary">Personalizza barra navigazione</string>
+    <string name="status_bar_summary">Modifica la status bar</string>
 
     <string name="safe_headset_volume_title">Volume sicuro cuffie</string>
     <string name="safe_headset_volume_summary">Evita un volume elevato quando le cuffie vengono inserite</string>
@@ -57,4 +59,9 @@
     <string name="less_notification_sounds_2m">2 minuti</string>
     <string name="less_notification_sounds_5m">5 minuti</string>
 
+    <string name="status_bar_title">Barra di stato</string>
+    <string name="status_bar_native_battery_percentage_title">Percentuale batteria</string>
+    <string name="status_bar_native_battery_percentage_summary">Mostra percentuale batteria</string>    
+
 </resources>
+

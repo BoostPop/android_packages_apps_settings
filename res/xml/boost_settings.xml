@@ -10,6 +10,12 @@
 		android:summary="@string/volume_rocker_summary" />
 
         <PreferenceScreen
+                android:key="status_bar"
+                android:fragment="com.android.settings.boost.StatusBarSettings"
+                android:title="@string/status_bar_title"
+                android:summary="@string/status_bar_summary" />
+
+        <PreferenceScreen
                 android:key="tweaks_settings"
                 android:fragment="com.android.settings.boost.TweaksSettings"
                 android:title="@string/tweaks_settings_title"
