@@ -25,9 +25,11 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
         private static final String KEY_SAFE_HEADSET_VOLUME = "safe_headset_volume";
 	private static final String VOLUME_WAKE_SCREEN = "volume_wake_screen";
+	private static final String KEY_VOL_MEDIA = "volume_keys_control_media_stream";
 
 	private SwitchPreference mSafeHeadsetVolume;
 	private SwitchPreference mVolumeWake;
+	private SwitchPreference mVolumeKeysControlMedia;
 
 	@Override
     	public void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,11 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         	mSafeHeadsetVolume.setChecked(Settings.System.getInt(getContentResolver(),
                		Settings.System.SAFE_HEADSET_VOLUME, 1) != 0);
 
+		// === Control Media ===	
+	        mVolumeKeysControlMedia = (SwitchPreference) findPreference(KEY_VOL_MEDIA);	
+	        mVolumeKeysControlMedia.setChecked(Settings.System.getInt(getContentResolver(),	
+	                Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM, 0) != 0);
+	        mVolumeKeysControlMedia.setOnPreferenceChangeListener(this);
 	}
 
 	@Override
@@ -61,18 +68,26 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     	}
 
 	public boolean onPreferenceChange(Preference preference, Object objValue) {
-		if ((Boolean) objValue) {
-                	Settings.System.putInt(getContentResolver(),
-                        Settings.System.SAFE_HEADSET_VOLUME, 1);
-            	} else {
-                	showDialogInner(DLG_SAFE_HEADSET_VOLUME);
-            	}
-	        if (preference == mVolumeWake) {
-                    boolean value = (Boolean) objValue;
-                        Settings.System.putInt(getContentResolver(), VOLUME_WAKE_SCREEN,
-                        value ? 1 : 0);
-                return true;
+                final String key = preference.getKey();
+                if (KEY_SAFE_HEADSET_VOLUME.equals(key)) {
+                        if ((Boolean) objValue) {
+                                Settings.System.putInt(getContentResolver(),
+                                Settings.System.SAFE_HEADSET_VOLUME, 1);
+                        } else {
+                        showDialogInner(DLG_SAFE_HEADSET_VOLUME);
+                        }
                 }
+	        if (preference == mVolumeWake) {
+                    	boolean value = (Boolean) objValue;
+                   	Settings.System.putInt(getContentResolver(), VOLUME_WAKE_SCREEN,
+                	value ? 1 : 0);
+          	    	return true;
+                } else if (preference == mVolumeKeysControlMedia) {
+			boolean value = (Boolean) objValue;
+                        Settings.System.putInt(getContentResolver(), KEY_VOL_MEDIA,
+                        value ? 1 : 0);
+                	return true;
+	        }
         	return false;
     	}
 	
