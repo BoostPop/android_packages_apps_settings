@@ -17,6 +17,7 @@
     <string name="attention">Attention</string>
     <string name="enabled">Enabled</string>
     <string name="default_string">Default</string>
+    <string name="general_string">General</string>
 
     <!-- Boost Settings Titles -->
     <string name="volume_rocker_title">Volume rocker</string>
@@ -25,7 +26,11 @@
     <string name="tweaks_settings_summary">Tweaks to boost your Nexus</string>
     <string name="tweaks_settings_title">Tweaks</string>
     <string name="navigation_bar_title">Navigation bar</string>
-    <string name="navigation_bar_summary">Navigation bar customizzation</string>
+    <string name="navigation_bar_summary">Navigation bar customization</string>
+    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_summary">Modify status bar and expanded status bar</string>
+    <string name="status_bar_category_title">Status bar</string>
+    <string name="quick_settings_category_title">Quick settings</string>
 
     <!-- VOLUME ROCKER -->
     <!-- Volume wake up -->
@@ -59,5 +64,22 @@
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">0dp (hide)</string>
+
+    <!-- STATUS BAR -->
+    <!-- tap-to-sleep -->
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap status bar or lock screen slider to put the device to sleep</string>
+    <!-- Status bar power menu -->
+    <string name="status_bar_power_menu_title">Power menu in expanded status bar</string>
+    <string name="status_bar_power_menu_dialog_title">Set tap and long-press actions</string>
+    <string name="status_bar_power_menu_off">Disabled</string>
+    <string name="status_bar_power_menu_action_screen_off">Screen off - Power menu</string>
+    <string name="status_bar_power_menu_action_dialog">Power menu - Screen off</string>
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="summary_quick_pulldown">Chose an edge of the status bar to pull down Quick Settings</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
 
 </resources>

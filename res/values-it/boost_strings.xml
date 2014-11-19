@@ -11,6 +11,7 @@
     <string name="attention">Attenzione</string>
     <string name="enabled">Abilitato</string>
     <string name="default_string">Default</string>
+    <string name="general_string">Generale</string>
 
     <!-- build date-->
     <string name="build_date">Linearboost build date</string>
@@ -21,7 +22,9 @@
     <string name="volume_rocker_summary">Personalizzazione tasti volume</string>
     <string name="tweaks_settings_summary">Tweaks per migliorare la Nexus experience</string>
     <string name="navigation_bar_title">Barra navigazione</string>
-    <string name="navigation_bar_summary">Personalizza barra navigazione</string>
+    <string name="status_bar_summary">Modifica la status bar</string>
+    <string name="status_bar_summary">Modifica la barra di stato e la barra di stato espansa</string>
+    <string name="status_bar_category_title">Barra di stato</string>
 
     <!-- VOLUME ROCKER-->
     <string name="volume_wake_title">Risveglio tasti volume</string>
@@ -39,4 +42,15 @@
 
     <string name="navigation_bar_height">Altezza barra di navigazione</string>
 
+    <!-- status bar -->
+    <string name="status_bar_title">Barra di stato</string>
+    <string name="double_tap_to_sleep_title">Doppio-tocco per spegnere</string>
+    <string name="double_tap_to_sleep_summary">Doppio-tocco sulla status bar per spegnere lo schermo. Abilitato anche in lockscreen</string>
+    <string name="title_quick_pulldown">Impostazioni rapide</string>
+    <string name="summary_quick_pulldown">Scorri verso il basso su un lato della barra di stato per mostrare i Quick Settings</string>
+    <string name="quick_pulldown_off">Disattivato</string>
+    <string name="quick_pulldown_left">Sinistro</string>
+    <string name="quick_pulldown_right">Destro</string>
+
 </resources>
+
