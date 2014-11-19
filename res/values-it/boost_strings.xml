@@ -42,4 +42,17 @@
 
     <string name="navigation_bar_height">Altezza barra di navigazione</string>
 
+    <string name="less_notification_sounds_title">Suoni notifica meno frequenti</string>
+    <string name="less_notification_sounds_summary">Limita i suoni di notifica di ogni app in modo che vengano riprodotti una volta per ogni tot tempo</string>
+    <string name="less_notification_sounds_default">Comportamento standard</string>
+    <string name="less_notification_sounds_3s">3 secondi</string>
+    <string name="less_notification_sounds_5s">5 secondi</string>
+    <string name="less_notification_sounds_10s">10 secondi</string>
+    <string name="less_notification_sounds_15s">15 secondi</string>
+    <string name="less_notification_sounds_30s">30 secondi</string>
+    <string name="less_notification_sounds_45s">45 secondi</string>
+    <string name="less_notification_sounds_1m">1 minuto</string>
+    <string name="less_notification_sounds_2m">2 minuti</string>
+    <string name="less_notification_sounds_5m">5 minuti</string>
+
 </resources>

@@ -24,9 +24,11 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
 
 	private static final String SCREENSHOT_SOUND = "screenshot_sound";
 	private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+	private static final String PREF_LESS_NOTIFICATION_SOUNDS = "less_notification_sounds";
 
         private SwitchPreference mScreenshotSound;
         private SwitchPreference mKillAppLongpressBack;
+	private ListPreference mAnnoyingNotifications;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,13 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                 mScreenshotSound.setChecked(Settings.System.getInt(getContentResolver(),
                         Settings.System.SCREENSHOT_SOUND, 1) != 0);
 
+		// === Less notifications ===
+	        mAnnoyingNotifications = (ListPreference) findPreference(PREF_LESS_NOTIFICATION_SOUNDS);
+	        int notificationThreshold = Settings.System.getInt(getContentResolver(),
+	                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
+	                0);
+	        mAnnoyingNotifications.setValue(Integer.toString(notificationThreshold));
+	        mAnnoyingNotifications.setOnPreferenceChangeListener(this);
 
 		// === Kill app ===
                 mKillAppLongpressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);
@@ -72,6 +81,12 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                         value ? 1 : 0);
                     return true;
                 }
+		final String key = preference.getKey();		
+	        if (PREF_LESS_NOTIFICATION_SOUNDS.equals(key)) {
+		            final int val = Integer.valueOf((String) objValue);
+		            Settings.System.putInt(getContentResolver(),
+                	    Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, val);
+        	}
                 return false;
         }
 
