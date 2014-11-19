@@ -27,6 +27,10 @@
     <!-- Volume rocker -->
     <string name="volume_wake_title">Volume rocker wake</string>
     <string name="volume_wake_summary">Pressing the volume rocker up/down will wake the device</string>
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Safe headset volume</string>
+    <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
+    <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
 
     <!-- TWEAKS  -->
     <!-- Screenshot sound -->
