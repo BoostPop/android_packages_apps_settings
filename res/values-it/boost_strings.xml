@@ -42,6 +42,10 @@
     <string name="volume_key_adjust_sound_summary">Emetti suono mentre si modifica il volume della suoneria</string>
     <string name="swap_volume_buttons_title">Segui rotazione</string>
     <string name="swap_volume_buttons_summary">I tasti volume seguono l\'orientamento dello schermo</string>
+    <string name="volume_key_cursor_control_title">Controllo cursore</string>
+    <string name="volume_key_cursor_control_off">Disattivato</string>
+    <string name="volume_key_cursor_control_on">I tasti su/giù muovono il cursore a sinistra/destra</string>
+    <string name="volume_key_cursor_control_on_reverse">I tasti su/giù muovono il cursore a destra/sinistra</string>
 
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Suono cattura schermo</string>
