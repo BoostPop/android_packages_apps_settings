@@ -32,8 +32,10 @@
     <string name="volume_keys_control_media_stream_summary">I tasti volume controllano i contenuti multimediali invece delle notifiche</string>
     <string name="volume_key_adjust_sound_title">Suono regolazione volume</string>
     <string name="volume_key_adjust_sound_summary">Emetti suono mentre si modifica il volume della suoneria</string>
-
-    <!-- Volume rocker -->
+    <string name="volume_key_cursor_control_title">Controllo cursore</string>
+    <string name="volume_key_cursor_control_off">Disattivato</string>
+    <string name="volume_key_cursor_control_on">I tasti su/giù muovono il cursore a sinistra/destra</string>
+    <string name="volume_key_cursor_control_on_reverse">I tasti su/giù muovono il cursore a destra/sinistra</string>
     <string name="volume_wake_title">Risveglio tasti volume</string>
     <string name="volume_wake_summary">Spingi tasto volume per accendere il telefono</string>
 
