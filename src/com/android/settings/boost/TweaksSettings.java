@@ -77,7 +77,7 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
             	    return true;
                 } else if (preference == mKillAppLongpressBack) {
                     boolean value = (Boolean) objValue;
-                        Settings.System.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
+                        Settings.Secure.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
                         value ? 1 : 0);
                     return true;
                 }
@@ -86,7 +86,8 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
 		            final int val = Integer.valueOf((String) objValue);
 		            Settings.System.putInt(getContentResolver(),
                 	    Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, val);
-        	}
+                    return true;
+		}
                 return false;
         }
 
