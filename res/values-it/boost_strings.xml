@@ -64,6 +64,10 @@
     <string name="status_bar_title">Barra di stato</string>
     <string name="status_bar_native_battery_percentage_title">Percentuale batteria</string>
     <string name="status_bar_native_battery_percentage_summary">Mostra percentuale batteria</string>    
+    <string name="double_tap_to_sleep_title">Doppio-tocco per spegnere</string>
+    <string name="double_tap_to_sleep_summary">Doppio-tocco sulla status bar per spegnere lo schermo. Abilitato anche in lockscreen</string>
+    <string name="status_bar_quick_qs_pulldown_title">Impostazioni rapide</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Il bordo destro della barra di stato mostra i Quick Settings</string>
 
 </resources>
 
