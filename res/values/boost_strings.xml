@@ -21,6 +21,8 @@
     <!-- Boost Settings Titles -->
     <string name="volume_rocker_title">Volume rocker</string>
     <string name="volume_rocker_summary">Custom use of volume keys</string>
+    <string name="tweaks_settings_title">Boost your Nexus</string>
+    <string name="tweaks_settings_summary">Tweaks to boost your Nexus</string>
 
     <!-- VOLUME ROCKER -->
     <!-- Volume wake up -->
@@ -29,5 +31,10 @@
     <!-- Music control -->
     <string name="volbtn_music_controls_title">Playback control</string>
     <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
+
+    <!-- TWEAKS  -->
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
 
 </resources>

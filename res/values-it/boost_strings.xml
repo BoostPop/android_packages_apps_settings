@@ -19,6 +19,7 @@
     <!-- Boost Settings Titles -->
     <string name="volume_rocker_title">Tasti Volume</string>
     <string name="volume_rocker_summary">Personalizzazione tasti volume</string>
+    <string name="tweaks_settings_summary">Tweaks per migliorare la Nexus experience</string>
 
     <!-- VOLUME ROCKER-->
     <string name="volume_wake_title">Risveglio tasti volume</string>
@@ -26,5 +27,9 @@
     <string name="volbtn_music_controls_title">Controlli tracce</string>
     <string name="volbtn_music_controls_summary">A schermo spento, tieni premuto volume per cambiare traccia durante la riproduzione</string>
 
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Suono cattura schermo</string>
+    <string name="screenshot_sound_summary">Emetti un suono quando si esegue uno screenshot</string>
 
 </resources>
