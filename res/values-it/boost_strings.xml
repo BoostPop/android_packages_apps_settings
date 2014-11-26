@@ -20,6 +20,8 @@
     <string name="volume_rocker_title">Tasti Volume</string>
     <string name="volume_rocker_summary">Personalizzazione tasti volume</string>
     <string name="tweaks_settings_summary">Tweaks per migliorare la Nexus experience</string>
+    <string name="navigation_bar_title">Barra navigazione</string>
+    <string name="navigation_bar_summary">Personalizza barra navigazione</string>
 
     <!-- VOLUME ROCKER-->
     <string name="volume_wake_title">Risveglio tasti volume</string>
@@ -31,5 +33,7 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Suono cattura schermo</string>
     <string name="screenshot_sound_summary">Emetti un suono quando si esegue uno screenshot</string>
+
+    <string name="navigation_bar_height">Altezza barra di navigazione</string>
 
 </resources>
