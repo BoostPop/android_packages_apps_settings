@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/volume_rocker_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+	<!-- Volume to wake up  -->
+	<com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                android:key="volume_wake_screen"
+                android:title="@string/volume_wake_title"
+                android:summary="@string/volume_wake_summary"
+                android:defaultValue="false"
+                android:disableDependentsState="true" />
+
+        <!-- Music control -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
+        	android:key="volbtn_music_controls"
+        	android:title="@string/volbtn_music_controls_title"
+        	android:summary="@string/volbtn_music_controls_summary"
+        	android:defaultValue="true"
+        	android:dependency="volume_wake_screen" />
+
+</PreferenceScreen>

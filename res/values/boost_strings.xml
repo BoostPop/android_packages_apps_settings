@@ -18,4 +18,16 @@
     <string name="enabled">Enabled</string>
     <string name="default_string">Default</string>
 
+    <!-- Boost Settings Titles -->
+    <string name="volume_rocker_title">Volume rocker</string>
+    <string name="volume_rocker_summary">Custom use of volume keys</string>
+
+    <!-- VOLUME ROCKER -->
+    <!-- Volume wake up -->
+    <string name="volume_wake_title">Volume rocker wake</string>
+    <string name="volume_wake_summary">Pressing the volume rocker up/down will wake the device. Overrides playback control.</string>
+    <!-- Music control -->
+    <string name="volbtn_music_controls_title">Playback control</string>
+    <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
+
 </resources>
