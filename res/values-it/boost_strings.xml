@@ -20,6 +20,8 @@
     <string name="volume_rocker_title">Tasti Volume</string>
     <string name="volume_rocker_summary">Personalizzazione tasti volume</string>
     <string name="tweaks_settings_summary">Tweaks per migliorare la Nexus experience</string>
+    <string name="navigation_bar_title">Barra navigazione</string>
+    <string name="navigation_bar_summary">Personalizza barra navigazione</string>
 
     <!-- Volume rocker -->
     <string name="volume_wake_title">Risveglio tasti volume</string>
@@ -31,5 +33,7 @@
 
     <string name="kill_app_longpress_back">Kill app </string>
     <string name="kill_app_longpress_back_summary">Chiudi l\'app corrente tenendo premuto il tasto indetro</string>
+
+    <string name="navigation_bar_height">Altezza barra di navigazione</string>
 
 </resources>
