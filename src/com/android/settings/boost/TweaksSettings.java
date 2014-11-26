@@ -87,7 +87,7 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
 		            Settings.System.putInt(getContentResolver(),
                 	    Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, val);
                     return true;
-		}
+        	}
                 return false;
         }
 

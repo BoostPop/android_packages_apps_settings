@@ -95,6 +95,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                         } else {
                         showDialogInner(DLG_SAFE_HEADSET_VOLUME);
                         }
+                    return true;
                 }
 	        if (preference == mVolumeWake) {
                     	boolean value = (Boolean) objValue;
