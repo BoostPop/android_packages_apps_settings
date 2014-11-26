@@ -29,4 +29,7 @@
     <string name="screenshot_sound_title">Suono cattura schermo</string>
     <string name="screenshot_sound_summary">Emetti un suono quando si esegue uno screenshot</string>
 
+    <string name="kill_app_longpress_back">Kill app </string>
+    <string name="kill_app_longpress_back_summary">Chiudi l\'app corrente tenendo premuto il tasto indetro</string>
+
 </resources>

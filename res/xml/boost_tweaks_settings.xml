@@ -11,4 +11,11 @@
                 android:summary="@string/screenshot_sound_summary"
                 android:defaultValue="true" />
 
+        <!-- Kill app -->
+        <SwitchPreference
+		android:key="kill_app_longpress_back"
+		android:title="@string/kill_app_longpress_back"
+		android:summary="@string/kill_app_longpress_back_summary"/>
+                android:defaultValue="true" />
+
 </PreferenceScreen>
