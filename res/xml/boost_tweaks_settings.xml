@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/volume_rocker_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+        <!-- Screenshot tone -->
+        <SwitchPreference
+                android:key="screenshot_sound"
+                android:title="@string/screenshot_sound_title"
+                android:summary="@string/screenshot_sound_summary"
+                android:defaultValue="true" />
+
+</PreferenceScreen>

@@ -14,6 +14,8 @@
     <!-- Boost Settings Titles -->
     <string name="volume_rocker_title">Volume rocker wake</string>
     <string name="volume_rocker_summary">Custom use of volume keys</string>
+    <string name="tweaks_settings_title">Boost your Nexus</string>
+    <string name="tweaks_settings_summary">Tweaks to boost your Nexus</string>
 
     <!-- build date-->
     <string name="build_date">Linearboost build date</string>
@@ -22,5 +24,10 @@
     <!-- Volume rocker -->
     <string name="volume_wake_title">Volume rocker wake</string>
     <string name="volume_wake_summary">Pressing the volume rocker up/down will wake the device</string>
+
+    <!-- TWEAKS  -->
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
 
 </resources>
