@@ -12,4 +12,16 @@
     <string name="enabled">Abilitato</string>
     <string name="default_string">Default</string>
 
+    <!-- build date-->
+    <string name="build_date">Linearboost build date</string>
+    <string name="build_date_default">2014-01-01-0000</string>
+
+    <!-- Boost Settings Titles -->
+    <string name="volume_rocker_title">Tasti Volume</string>
+    <string name="volume_rocker_summary">Personalizzazione tasti volume</string>
+
+    <!-- Volume rocker -->
+    <string name="volume_wake_title">Risveglio tasti volume</string>
+    <string name="volume_wake_summary">Spingi tasto volume per accendere il telefono</string>
+
 </resources>

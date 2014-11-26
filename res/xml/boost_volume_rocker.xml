@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/volume_rocker_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+	<!-- Volume to wake up  -->
+	<SwitchPreference
+                android:key="volume_wake_screen"
+                android:title="@string/volume_wake_title"
+                android:summary="@string/volume_wake_summary"
+                android:defaultValue="false"
+                android:persistent="false" />
+
+
+</PreferenceScreen>
