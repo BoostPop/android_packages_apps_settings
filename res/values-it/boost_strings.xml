@@ -104,5 +104,10 @@
     <string name="status_bar_am_pm_small">Piccolo</string>
     <string name="status_bar_am_pm_hidden">Nascosto (default)</string>
 
+    <string name="app_notification_show_on_keyguard_title">Notifiche schermata di sblocco</string>
+    <string name="app_notification_show_on_keyguard_summary">Mostra notifiche app sulla schermata di sblocco</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Notifiche processi schermata di sblocco</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Disabilita notifiche processi in esecuzione sulla schermata di sblocco</string>
+
 </resources>
 
