@@ -54,7 +54,7 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                 mKillAppLongpressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);
                 mKillAppLongpressBack.setOnPreferenceChangeListener(this);
                 mKillAppLongpressBack.setChecked(Settings.Secure.getInt(getContentResolver(),
-                        Settings.Secure.KILL_APP_LONGPRESS_BACK, 1) != 0);
+                        Settings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
 
         }
 

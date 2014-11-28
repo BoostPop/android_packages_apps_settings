@@ -45,7 +45,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 	        mVolumeWake = (SwitchPreference) findPreference(VOLUME_WAKE_SCREEN);
                 mVolumeWake.setOnPreferenceChangeListener(this);
 	        mVolumeWake.setChecked(Settings.System.getInt(getContentResolver(),
-        	        Settings.System.VOLUME_WAKE_SCREEN, 1) != 0);
+        	        Settings.System.VOLUME_WAKE_SCREEN, 0) != 0);
 
 		// === Safe headset ===
 	        mSafeHeadsetVolume = (SwitchPreference) findPreference(KEY_SAFE_HEADSET_VOLUME);
