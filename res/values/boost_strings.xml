@@ -30,13 +30,13 @@
     <string name="volume_rocker_summary">Custom use of volume keys</string>
     <string name="tweaks_settings_title">Boost your Nexus</string>
     <string name="tweaks_settings_summary">Tweaks to boost your Nexus</string>
-    <string name="tweaks_settings_title">Tweaks</string>
+    <string name="tweaks_settings_title">Boost your Nexus</string>
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="navigation_bar_summary">Navigation bar customizzation</string>
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_summary">Mod your status bar</string>
-    <string name="led_settings_title">Led Notifications</string>
-    <string name="led_settings_summary">Tune the Led behaviour</string>
+    <string name="led_settings_title">Notifications</string>
+    <string name="led_settings_summary">Customize your Nexus notifications</string>
 
     <!-- build date-->
     <string name="build_date">Linearboost build date</string>
