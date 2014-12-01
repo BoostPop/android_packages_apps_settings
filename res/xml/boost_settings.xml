@@ -33,5 +33,12 @@
                 android:title="@string/led_settings_title"
                 android:summary="@string/led_settings_summary" />
 
+       <PreferenceScreen
+		android:key="app_ops"
+		android:title="@string/app_ops_settings"
+                android:summary="@string/app_ops_settings_summary"
+                android:persistent="false"
+                android:fragment="com.android.settings.applications.AppOpsSummary"/>
+
 </PreferenceScreen>
 
