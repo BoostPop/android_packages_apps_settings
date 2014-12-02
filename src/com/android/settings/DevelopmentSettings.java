@@ -1156,7 +1156,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private void writeAnimationScaleOption(int which, AnimationScalePreference pref,
             Object newValue) {
         try {
-            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 0.75f;
+            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 0.90f;
             mWindowManager.setAnimationScale(which, scale);
             updateAnimationScaleValue(which, pref);
         } catch (RemoteException e) {
