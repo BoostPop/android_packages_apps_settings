@@ -34,11 +34,10 @@
                 android:summary="@string/led_settings_summary" />
 
        <PreferenceScreen
-		android:key="app_ops"
-		android:title="@string/app_ops_settings"
-                android:summary="@string/app_ops_settings_summary"
-                android:persistent="false"
-                android:fragment="com.android.settings.applications.AppOpsSummary"/>
+		android:key="securiry_tweaks"
+		android:title="@string/security_tweaks_title"
+                android:summary="@string/security_tweaks_summary"
+                android:fragment="com.android.settings.boost.SecurityTweaks"/>
 
 </PreferenceScreen>
 

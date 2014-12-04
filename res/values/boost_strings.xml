@@ -39,6 +39,8 @@
     <string name="status_bar_summary">Mod your status bar</string>
     <string name="led_settings_title">Notifications</string>
     <string name="led_settings_summary">Customize your Nexus notifications</string>
+    <string name="security_tweaks_title">Security</string>
+    <string name="security_tweaks_summary">Mod the some security settings</string>
 
     <!-- build date-->
     <string name="build_date">Linearboost build date</string>

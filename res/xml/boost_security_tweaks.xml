@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/security_tweaks_title" >
+
+       <PreferenceScreen
+		android:key="app_ops"
+		android:title="@string/app_ops_settings"
+                android:summary="@string/app_ops_settings_summary"
+                android:persistent="false"
+                android:fragment="com.android.settings.applications.AppOpsSummary"/>
+
+</PreferenceScreen>

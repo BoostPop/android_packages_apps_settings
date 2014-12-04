@@ -26,6 +26,8 @@
     <string name="status_bar_summary">Modifica la status bar</string>
     <string name="led_settings_title">Notifiche</string>
     <string name="led_settings_summary">Personallizza le notifiche del tuo nexus</string>
+    <string name="security_tweaks_title">Sicurezza</string>
+    <string name="security_tweaks_summary">Modifica permessi e sicurezza telefono</string>
 
     <string name="safe_headset_volume_title">Volume sicuro cuffie</string>
     <string name="safe_headset_volume_summary">Evita un volume elevato quando le cuffie vengono inserite</string>
