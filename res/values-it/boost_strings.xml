@@ -159,5 +159,8 @@
     <string name="clock_date_style_uppercase">Maiuscolo</string>
     <string name="clock_date_format_custom">Formato java personalizzato</string>
 
+    <string name="block_on_secure_keyguard_title">Disabilita impostazioni rapide</string>
+    <string name="block_on_secure_keyguard_summary">Disabilità quick settings con schermata di sblocco sicura</string>
+
 </resources>
 

@@ -2,6 +2,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/security_tweaks_title" >
 
+       <SwitchPreference	
+            android:key="block_on_secure_keyguard"	
+            android:title="@string/block_on_secure_keyguard_title"	
+            android:summary="@string/block_on_secure_keyguard_summary"	
+            android:persistent="false" />
+
        <PreferenceScreen
 		android:key="app_ops"
 		android:title="@string/app_ops_settings"
