@@ -46,7 +46,7 @@
     <string name="screenshot_sound_summary">Emetti un suono quando si esegue uno screenshot</string>
 
     <string name="kill_app_longpress_back">Kill app </string>
-    <string name="kill_app_longpress_back_summary">Chiudi l\'app corrente tenendo premuto il tasto indetro</string>
+    <string name="kill_app_longpress_back_summary">Chiudi l\'app corrente tenendo premuto il tasto indietro</string>
 
     <string name="navigation_bar_height">Altezza barra di navigazione</string>
 
