@@ -21,8 +21,10 @@ public class SecurityTweaks extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
+    private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
 
-    SwitchPreference mBlockOnSecureKeyguard;
+    private SwitchPreference mBlockOnSecureKeyguard;
+    private SwitchPreference mQuickUnlockScreen;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,14 @@ public class SecurityTweaks extends SettingsPreferenceFragment implements
             prefs.removePreference(mBlockOnSecureKeyguard);	
         }
 
+        // === Quick Unlock Screen Control ===
+        mQuickUnlockScreen = (SwitchPreference) findPreference(LOCKSCREEN_QUICK_UNLOCK_CONTROL);
+        if (mQuickUnlockScreen != null) {
+            mQuickUnlockScreen.setChecked(Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL, 1) == 1);
+	    mQuickUnlockScreen.setOnPreferenceChangeListener(this);
+        }
+
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -50,6 +60,11 @@ public class SecurityTweaks extends SettingsPreferenceFragment implements
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,	
                     (Boolean) objValue ? 1 : 0);	
             return true;	
+        } else if (preference == mQuickUnlockScreen) {
+            Settings.Secure.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL,
+                    (Boolean) objValue ? 1 : 0);
+	    return true;
 	}
         return false;
     }

@@ -8,6 +8,12 @@
             android:summary="@string/block_on_secure_keyguard_summary"	
             android:persistent="false" />
 
+        <SwitchPreference
+            android:key="quick_unlock_control"
+            android:title="@string/unlock_quick_unlock_control_title"
+            android:summary="@string/unlock_quick_unlock_control_summary"
+            android:persistent="false"/>
+
        <PreferenceScreen
 		android:key="app_ops"
 		android:title="@string/app_ops_settings"
