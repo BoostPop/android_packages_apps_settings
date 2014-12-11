@@ -18,9 +18,9 @@ import com.android.settings.Utils;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String STATUS_BAR_NATIVE_BATTERY_PERCENTAGE = "status_bar_native_battery_percentage";
+    private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 
-    private SwitchPreference mStatusBarNativeBatteryPercentage;
+    private SwitchPreference mStatusBarShowBatteryPercent;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,21 +29,21 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.boost_status_bar_settings);
 	PreferenceScreen prefSet = getPreferenceScreen();
 
-        // === Native battery percentage ===
-        mStatusBarNativeBatteryPercentage = (SwitchPreference) prefSet.findPreference (STATUS_BAR_NATIVE_BATTERY_PERCENTAGE);
-        mStatusBarNativeBatteryPercentage.setChecked((Settings.System.getInt(getActivity()
-                 .getApplicationContext().getContentResolver(),
-                 Settings.System.STATUS_BAR_NATIVE_BATTERY_PERCENTAGE, 0) == 1));
-	mStatusBarNativeBatteryPercentage.setOnPreferenceChangeListener(this);
+        // === status bar show battery percent ===
+        mStatusBarShowBatteryPercent = (SwitchPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+        mStatusBarShowBatteryPercent.setOnPreferenceChangeListener(this);
+        int statusBarShowBatteryPercent = Settings.System.getInt(getContentResolver(),
+                STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
+        mStatusBarShowBatteryPercent.setChecked(statusBarShowBatteryPercent != 0);
 
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
 	ContentResolver cr = getActivity().getContentResolver();
 	boolean value = (Boolean) objValue;
-        if (preference == mStatusBarNativeBatteryPercentage) {
+        if (preference == mStatusBarShowBatteryPercent) {
             Settings.System.putInt(cr,
-                    Settings.System.STATUS_BAR_NATIVE_BATTERY_PERCENTAGE, value ? 1 : 0);
+                    Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, value ? 1 : 0);
             return true;
         }
 
