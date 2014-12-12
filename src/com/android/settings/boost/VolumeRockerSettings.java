@@ -24,12 +24,10 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         private static final int DLG_SAFE_HEADSET_VOLUME = 0;
 
         private static final String KEY_SAFE_HEADSET_VOLUME = "safe_headset_volume";
-	private static final String KEY_VOL_MEDIA = "volume_keys_control_media_stream";
 	private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 	private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
 
 	private SwitchPreference mSafeHeadsetVolume;
-	private SwitchPreference mVolumeKeysControlMedia;
 	private ListPreference mVolumeKeyCursorControl;
 	private SwitchPreference mVolBtnMusicCtrl;
 
@@ -44,12 +42,6 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                 mSafeHeadsetVolume.setOnPreferenceChangeListener(this);
         	mSafeHeadsetVolume.setChecked(Settings.System.getInt(getContentResolver(),
                		Settings.System.SAFE_HEADSET_VOLUME, 1) != 0);
-
-		// === Control Media ===	
-	        mVolumeKeysControlMedia = (SwitchPreference) findPreference(KEY_VOL_MEDIA);	
-	        mVolumeKeysControlMedia.setChecked(Settings.System.getInt(getContentResolver(),	
-	                Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM, 0) != 0);
-	        mVolumeKeysControlMedia.setOnPreferenceChangeListener(this);
 
 		// === Cursor controll ===
 	        mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
@@ -88,12 +80,6 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                         showDialogInner(DLG_SAFE_HEADSET_VOLUME);
                         }
                     return true;
-                }
-                if (preference == mVolumeKeysControlMedia) {
-			boolean value = (Boolean) objValue;
-                        Settings.System.putInt(getContentResolver(), KEY_VOL_MEDIA,
-        	                value ? 1 : 0);
-                	return true;
 		} else if (preference == mVolBtnMusicCtrl ) {
                     boolean value = (Boolean) objValue;
 		    Settings.System.putInt(getContentResolver(), KEY_VOLBTN_MUSIC_CTRL,

@@ -19,14 +19,6 @@
         	android:persistent="false"
         	android:defaultValue="true" />
 
-	<!-- Control media -->
-	<SwitchPreference
-	        android:key="volume_keys_control_media_stream"
-	        android:title="@string/volume_keys_control_media_stream"
-	        android:summary="@string/volume_keys_control_media_stream_summary"
-	        android:defaultValue="false"
-	        android:persistent="false" />
-
 	<!-- Adjust sound -->
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
 	        android:key="volume_adjust_sound"
