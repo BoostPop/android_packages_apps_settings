@@ -24,14 +24,12 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         private static final int DLG_SAFE_HEADSET_VOLUME = 0;
 
         private static final String KEY_SAFE_HEADSET_VOLUME = "safe_headset_volume";
-	private static final String VOLUME_WAKE_SCREEN = "volume_wake_screen";
 	private static final String KEY_VOL_MEDIA = "volume_keys_control_media_stream";
 	private static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
 	private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 	private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
 
 	private SwitchPreference mSafeHeadsetVolume;
-	private SwitchPreference mVolumeWake;
 	private SwitchPreference mVolumeKeysControlMedia;
 	private SwitchPreference mVolumeKeyAdjustSound;
 	private ListPreference mVolumeKeyCursorControl;
@@ -42,12 +40,6 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         	super.onCreate(savedInstanceState);
 
         	addPreferencesFromResource(R.xml.boost_volume_rocker);
-
-	        // === Volume to wake up ===
-	        mVolumeWake = (SwitchPreference) findPreference(VOLUME_WAKE_SCREEN);
-                mVolumeWake.setOnPreferenceChangeListener(this);
-	        mVolumeWake.setChecked(Settings.System.getInt(getContentResolver(),
-        	        Settings.System.VOLUME_WAKE_SCREEN, 0) != 0);
 
 		// === Safe headset ===
 	        mSafeHeadsetVolume = (SwitchPreference) findPreference(KEY_SAFE_HEADSET_VOLUME);
@@ -105,12 +97,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                         }
                     return true;
                 }
-	        if (preference == mVolumeWake) {
-                    	boolean value = (Boolean) objValue;
-                   	Settings.System.putInt(getContentResolver(), VOLUME_WAKE_SCREEN,
-	                	value ? 1 : 0);
-          	    	return true;
-                } else if (preference == mVolumeKeysControlMedia) {
+                if (preference == mVolumeKeysControlMedia) {
 			boolean value = (Boolean) objValue;
                         Settings.System.putInt(getContentResolver(), KEY_VOL_MEDIA,
         	                value ? 1 : 0);
