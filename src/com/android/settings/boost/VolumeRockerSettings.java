@@ -25,13 +25,11 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
         private static final String KEY_SAFE_HEADSET_VOLUME = "safe_headset_volume";
 	private static final String KEY_VOL_MEDIA = "volume_keys_control_media_stream";
-	private static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
 	private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 	private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
 
 	private SwitchPreference mSafeHeadsetVolume;
 	private SwitchPreference mVolumeKeysControlMedia;
-	private SwitchPreference mVolumeKeyAdjustSound;
 	private ListPreference mVolumeKeyCursorControl;
 	private SwitchPreference mVolBtnMusicCtrl;
 
@@ -52,12 +50,6 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 	        mVolumeKeysControlMedia.setChecked(Settings.System.getInt(getContentResolver(),	
 	                Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM, 0) != 0);
 	        mVolumeKeysControlMedia.setOnPreferenceChangeListener(this);
-
-		// === Adjust sound ===
-	        mVolumeKeyAdjustSound = (SwitchPreference) findPreference(VOLUME_KEY_ADJUST_SOUND);
-	        mVolumeKeyAdjustSound.setOnPreferenceChangeListener(this);
-	        mVolumeKeyAdjustSound.setChecked(Settings.System.getInt(getContentResolver(),
-	                VOLUME_KEY_ADJUST_SOUND, 1) != 0);		
 
 		// === Cursor controll ===
 	        mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
@@ -102,11 +94,6 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                         Settings.System.putInt(getContentResolver(), KEY_VOL_MEDIA,
         	                value ? 1 : 0);
                 	return true;
-	        } else if (preference == mVolumeKeyAdjustSound) {
-	            boolean value = (Boolean) objValue;
-	            Settings.System.putInt(getContentResolver(), VOLUME_KEY_ADJUST_SOUND,
-	                    value ? 1: 0);
-	            return true;
 		} else if (preference == mVolBtnMusicCtrl ) {
                     boolean value = (Boolean) objValue;
 		    Settings.System.putInt(getContentResolver(), KEY_VOLBTN_MUSIC_CTRL,

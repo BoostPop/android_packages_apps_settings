@@ -28,10 +28,11 @@
 	        android:persistent="false" />
 
 	<!-- Adjust sound -->
-	<SwitchPreference
-	        android:key="volume_key_adjust_sound"
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+	        android:key="volume_adjust_sound"
 	        android:title="@string/volume_key_adjust_sound_title"
-	        android:summary="@string/volume_key_adjust_sound_summary" />	
+	        android:summary="@string/volume_key_adjust_sound_summary"	
+                android:defaultValue="true" />
 
 	<!-- Cursor control -->
     	<ListPreference
