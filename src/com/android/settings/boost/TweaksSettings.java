@@ -24,9 +24,11 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
 
 	private static final String SCREENSHOT_SOUND = "screenshot_sound";
 	private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+	private static final String ADVANCED_REBOOT = "advanced_reboot";
 
         private SwitchPreference mScreenshotSound;
         private SwitchPreference mKillAppLongpressBack;
+	private SwitchPreference mAdvancedReboot;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,13 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                 mKillAppLongpressBack.setOnPreferenceChangeListener(this);
                 mKillAppLongpressBack.setChecked(Settings.Secure.getInt(getContentResolver(),
                         Settings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
+
+		// advanced reboot
+        	mAdvancedReboot = (SwitchPreference) findPreference(ADVANCED_REBOOT);
+        	mAdvancedReboot.setOnPreferenceChangeListener(this);
+        	int advancedReboot = Settings.Secure.getInt(getContentResolver(),
+        	        ADVANCED_REBOOT, 0);
+	        mAdvancedReboot.setChecked(advancedReboot != 0);
 
         }
 
@@ -70,7 +79,12 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                         Settings.Secure.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
                         value ? 1 : 0);
                     return true;
-		}
+		} else if (preference == mAdvancedReboot) {
+            	    boolean value = (Boolean) objValue;
+            		Settings.Secure.putInt(getContentResolver(), ADVANCED_REBOOT,
+                	value ? 1 : 0);
+        	    return true;
+	        }
                 return false;
         }
 

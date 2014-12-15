@@ -11,11 +11,17 @@
                 android:summary="@string/screenshot_sound_summary"
                 android:defaultValue="true" />
 
+        <!-- Advanced reboot -->
+        <SwitchPreference
+            android:key="advanced_reboot"
+            android:summary="@string/advanced_reboot_summary"
+            android:title="@string/advanced_reboot_title" />
+
         <!-- Kill app -->
         <SwitchPreference
 		android:key="kill_app_longpress_back"
 		android:title="@string/kill_app_longpress_back"
-		android:summary="@string/kill_app_longpress_back_summary"/>
+		android:summary="@string/kill_app_longpress_back_summary"
                 android:defaultValue="true" />
 
 </PreferenceScreen>
