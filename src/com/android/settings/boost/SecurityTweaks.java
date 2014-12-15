@@ -22,9 +22,11 @@ public class SecurityTweaks extends SettingsPreferenceFragment implements
 
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
+    private static final String LOCKSCREEN_ENABLE_POWER_MENU = "lockscreen_enable_power_menu";
 
     private SwitchPreference mBlockOnSecureKeyguard;
     private SwitchPreference mQuickUnlockScreen;
+    private SwitchPreference mBlockOnSecurePowermenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,20 +38,32 @@ public class SecurityTweaks extends SettingsPreferenceFragment implements
 
 	final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());	
         mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);	
+        mQuickUnlockScreen = (SwitchPreference) findPreference(LOCKSCREEN_QUICK_UNLOCK_CONTROL);
+	mBlockOnSecurePowermenu = (SwitchPreference) findPreference(LOCKSCREEN_ENABLE_POWER_MENU);
+
         if (lockPatternUtils.isSecure()) {	
+
+            // === Block QS on secure keyguard ===
             mBlockOnSecureKeyguard.setChecked(Settings.Secure.getInt(getContentResolver(),	
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 1) == 1);
             mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);	
+
+            // === Quick Unlock Screen Control ===
+            if (mQuickUnlockScreen != null) {
+            	mQuickUnlockScreen.setChecked(Settings.Secure.getInt(getContentResolver(),
+                	Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL, 1) == 1);
+            	mQuickUnlockScreen.setOnPreferenceChangeListener(this);
+	    }
+
+            // === Block Powermenu on secure keyguard ===
+	    mBlockOnSecurePowermenu.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, 1) == 1);	
+	    mBlockOnSecurePowermenu.setOnPreferenceChangeListener(this); 
+
         } else {	
             prefs.removePreference(mBlockOnSecureKeyguard);	
-        }
-
-        // === Quick Unlock Screen Control ===
-        mQuickUnlockScreen = (SwitchPreference) findPreference(LOCKSCREEN_QUICK_UNLOCK_CONTROL);
-        if (mQuickUnlockScreen != null) {
-            mQuickUnlockScreen.setChecked(Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL, 1) == 1);
-	    mQuickUnlockScreen.setOnPreferenceChangeListener(this);
+            prefs.removePreference(mQuickUnlockScreen);
+            prefs.removePreference(mBlockOnSecurePowermenu);
         }
 
     }
@@ -65,7 +79,12 @@ public class SecurityTweaks extends SettingsPreferenceFragment implements
                     Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL,
                     (Boolean) objValue ? 1 : 0);
 	    return true;
-	}
+	} else if (preference == mBlockOnSecurePowermenu) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.LOCKSCREEN_ENABLE_POWER_MENU,
+                    (Boolean) objValue ? 1 : 0);
+            return true;
+	}	
         return false;
     }
 

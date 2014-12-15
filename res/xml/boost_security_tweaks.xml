@@ -14,7 +14,7 @@
             android:summary="@string/unlock_quick_unlock_control_summary"
             android:persistent="false"/>
 
-	<com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <SwitchPreference
             android:key="lockscreen_enable_power_menu"
             android:title="@string/lockscreen_enable_power_menu_title"
             android:summary="@string/lockscreen_enable_power_menu_summary"
