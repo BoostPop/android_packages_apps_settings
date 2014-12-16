@@ -40,11 +40,14 @@
     <string name="volume_key_cursor_control_on_reverse">I tasti su/giù muovono il cursore a destra/sinistra</string>
     <string name="volume_wake_title">Risveglio tasti volume</string>
     <string name="volume_wake_summary">Spingi tasto volume per accendere il telefono</string>
+    <string name="volbtn_music_controls_title">Controlli tracce</string>
+    <string name="volbtn_music_controls_summary">A schermo spento, tieni premuto tasto giù/s per passare alla traccia precedente/successiva</string>
 
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Suono cattura schermo</string>
     <string name="screenshot_sound_summary">Emetti un suono quando si esegue uno screenshot</string>
-
+    <string name="advanced_reboot_title">Riavvio avanzato</string>
+    <string name="advanced_reboot_summary">Quando attivo, include nel menu di riavvio le opzioni per il riavvio in recovery, bootloader o per un riavvio veloce</string>
     <string name="kill_app_longpress_back">Kill app </string>
     <string name="kill_app_longpress_back_summary">Chiudi l\'app corrente tenendo premuto il tasto indietro</string>
 
@@ -146,6 +149,10 @@
 
     <string name="block_on_secure_keyguard_title">Disabilita impostazioni rapide</string>
     <string name="block_on_secure_keyguard_summary">Disabilità quick settings con schermata di sblocco sicura</string>
+    <string name="unlock_quick_unlock_control_title">Sblocco veloce</string>
+    <string name="unlock_quick_unlock_control_summary">Sblocco automatico quando il PIN o la password sono inseriti correttamente</string>
+    <string name="lockscreen_enable_power_menu_title">Abilita riavvio avanzato</string>
+    <string name="lockscreen_enable_power_menu_summary">Abilità/Disabilità menu spegnimento sulla schermata di sblocco sicura</string>
 
 </resources>
 
