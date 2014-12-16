@@ -43,7 +43,7 @@
     <string name="security_tweaks_summary">Mod the some security settings</string>
 
     <!-- build date-->
-    <string name="build_date">Linearboost build date</string>
+    <string name="build_date">Boostpop build date</string>
     <string name="build_date_default">2014-01-01-0000</string>
 
     <!-- VOLUME ROCKER -->

@@ -14,7 +14,7 @@
     <string name="general_string">Generale</string>
 
     <!-- build date-->
-    <string name="build_date">Linearboost build date</string>
+    <string name="build_date">Data build Boostpop</string>
     <string name="build_date_default">2014-01-01-0000</string>
 
     <!-- Boost Settings Titles -->
