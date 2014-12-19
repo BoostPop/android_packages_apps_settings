@@ -179,5 +179,17 @@
     <string name="qs_show_cast_title">Condividi schermo</string>
     <string name="qs_show_inversion_title">Inversione colori</string>
 
+    <!-- Power Menu -->
+    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_summary">Personalizza il menu riavvio</string>
+    <string name="power_menu_power_title">Spegni</string>
+    <string name="power_menu_reboot_title">Riavvia</string>
+    <string name="power_menu_screenshot_title">Cattura schermo</string>
+    <string name="power_menu_airplane_title">Modalità aereo</string>
+    <string name="power_menu_users_title">Cambia utente</string>
+    <string name="power_menu_settings_title">Shortcut impostazioni</string>
+    <string name="power_menu_lockdown_title">Blocca dispositivo</string>
+    <string name="power_menu_sound_title">Comandi audio</string>
+
 </resources>
 
