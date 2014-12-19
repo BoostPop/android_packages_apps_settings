@@ -25,11 +25,9 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
         private static final String KEY_SAFE_HEADSET_VOLUME = "safe_headset_volume";
 	private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
-	private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
 
 	private SwitchPreference mSafeHeadsetVolume;
 	private ListPreference mVolumeKeyCursorControl;
-	private SwitchPreference mVolBtnMusicCtrl;
 
 	@Override
     	public void onCreate(Bundle savedInstanceState) {
@@ -50,13 +48,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 	            mVolumeKeyCursorControl.setValue(Integer.toString(Settings.System.getInt(getActivity()
 	                    .getContentResolver(), Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0)));
 	            mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
-		}
-
-		// === Music control ===
-        	mVolBtnMusicCtrl = (SwitchPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
-                mVolBtnMusicCtrl.setOnPreferenceChangeListener(this);
-        	mVolBtnMusicCtrl.setChecked(Settings.System.getInt(getContentResolver(),
-        	        Settings.System.VOLUME_MUSIC_CONTROLS, 1) != 0);
+		}	
 	}
 
 	@Override
@@ -80,11 +72,6 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                         showDialogInner(DLG_SAFE_HEADSET_VOLUME);
                         }
                     return true;
-		} else if (preference == mVolBtnMusicCtrl ) {
-                    boolean value = (Boolean) objValue;
-		    Settings.System.putInt(getContentResolver(), KEY_VOLBTN_MUSIC_CTRL,
-                    	    value ? 1 : 0);
-		    return true;
 	        } else if (preference == mVolumeKeyCursorControl) {
 			String volumeKeyCursorControl = (String) objValue;
 			int volumeKeyCursorControlValue = Integer.parseInt(volumeKeyCursorControl);
