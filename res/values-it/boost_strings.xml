@@ -24,8 +24,8 @@
     <string name="navigation_bar_title">Barra navigazione</string>
     <string name="navigation_bar_summary">Personalizza barra navigazione</string>
     <string name="status_bar_summary">Modifica la status bar</string>
-    <string name="led_settings_title">Notifiche</string>
-    <string name="led_settings_summary">Personallizza le notifiche del tuo nexus</string>
+    <string name="notifications_settings_title">Notifiche</string>
+    <string name="notifications_settings_summary">Personallizza le notifiche del tuo nexus</string>
     <string name="security_tweaks_title">Sicurezza</string>
     <string name="security_tweaks_summary">Modifica permessi e sicurezza telefono</string>
 
@@ -77,6 +77,7 @@
     <!-- Notification LED -->
     <!-- Display settings screen, notification light settings -->
     <string name="led_settings_category_title">LED di notifica</string>
+    <string name="notification_light_title">LED di notifica</string>
     <string name="notification_light_general_title">Generale</string>
     <string name="notification_light_applist_title">Applicazioni</string>
     <string name="notification_light_phonelist_title">Telefono</string>

@@ -9,6 +9,7 @@
     <string name="reset">Reset</string>
     <string name="attention">Attention</string>
     <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
     <string name="default_string">Default</string>
     <string name="general_string">General</string>
     <string name="font_size_sample">Sample</string>
@@ -37,10 +38,12 @@
     <string name="navigation_bar_summary">Navigation bar customization</string>
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_summary">Mod your status bar</string>
-    <string name="led_settings_title">Notifications</string>
-    <string name="led_settings_summary">Customize your Nexus notifications</string>
+    <string name="notifications_settings_title">Notifications</string>
+    <string name="notifications_settings_summary">Customize your Nexus notifications</string>
     <string name="security_tweaks_title">Security</string>
     <string name="security_tweaks_summary">Mod the some security settings</string>
+    <string name="device_category_title">Device</string>
+    <string name="system_category_title">System</string>
 
     <!-- build date-->
     <string name="build_date">Boostpop build date</string>

@@ -15,12 +15,6 @@
                 android:title="@string/status_bar_title"
                 android:summary="@string/status_bar_summary" />
 
-        <PreferenceScreen
-                android:key="tweaks_settings"
-                android:fragment="com.android.settings.boost.TweaksSettings"
-                android:title="@string/tweaks_settings_title"
-                android:summary="@string/tweaks_settings_summary" />
-
 	<PreferenceScreen
 	        android:key="navigation_bar"
 	        android:fragment="com.android.settings.boost.NavigationBarSettings"
@@ -28,16 +22,22 @@
                 android:summary="@string/navigation_bar_summary" />
 
         <PreferenceScreen
-                android:key="led_settings"
-                android:fragment="com.android.settings.boost.LedSettings"
-                android:title="@string/led_settings_title"
-                android:summary="@string/led_settings_summary" />
+                android:key="notifications_settings"
+                android:fragment="com.android.settings.boost.NotificationsSettings"
+                android:title="@string/notifications_settings_title"
+                android:summary="@string/notifications_settings_summary" />
 
        <PreferenceScreen
 		android:key="securiry_tweaks"
 		android:title="@string/security_tweaks_title"
                 android:summary="@string/security_tweaks_summary"
                 android:fragment="com.android.settings.boost.SecurityTweaks"/>
+
+        <PreferenceScreen
+                android:key="tweaks_settings"
+                android:fragment="com.android.settings.boost.TweaksSettings"
+                android:title="@string/tweaks_settings_title"
+                android:summary="@string/tweaks_settings_summary" />
 
 </PreferenceScreen>
 

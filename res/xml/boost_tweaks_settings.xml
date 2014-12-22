@@ -4,12 +4,28 @@
     android:title="@string/volume_rocker_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+	android:key="device_category"
+	android:title="@string/device_category_title" >
+
         <!-- Screenshot tone -->
         <SwitchPreference
                 android:key="screenshot_sound"
                 android:title="@string/screenshot_sound_title"
                 android:summary="@string/screenshot_sound_summary"
                 android:defaultValue="true" />
+
+        <!-- Battery light -->
+        <PreferenceScreen
+                android:key="battery_light"
+                android:title="@string/battery_light_title"
+                android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="system_category"
+        android:title="@string/system_category_title" >
 
         <!-- Advanced reboot -->
         <SwitchPreference
@@ -23,5 +39,7 @@
 		android:title="@string/kill_app_longpress_back"
 		android:summary="@string/kill_app_longpress_back_summary"
                 android:defaultValue="true" />
+
+       </PreferenceCategory>
 
 </PreferenceScreen>
