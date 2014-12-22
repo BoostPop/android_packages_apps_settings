@@ -41,7 +41,7 @@
     <string name="volume_wake_title">Risveglio tasti volume</string>
     <string name="volume_wake_summary">Spingi tasto volume per accendere il telefono</string>
     <string name="volbtn_music_controls_title">Controlli tracce</string>
-    <string name="volbtn_music_controls_summary">A schermo spento, tieni premuto tasto giù/s per passare alla traccia precedente/successiva</string>
+    <string name="volbtn_music_controls_summary">A schermo spento, tieni premuto volume per cambiare traccia durante la riproduzione</string>
 
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Suono cattura schermo</string>
@@ -54,8 +54,11 @@
     <string name="navigation_bar_height">Altezza barra di navigazione</string>
 
     <string name="status_bar_title">Barra di stato</string>
-    <string name="status_bar_native_battery_percentage_title">Percentuale batteria</string>
-    <string name="status_bar_native_battery_percentage_summary">Mostra percentuale batteria</string>    
+    <string name="status_bar_battery_percentage_title">Mostra percentuale batteria</string>
+    <string name="status_bar_battery_percentage_dialog_title">Percentuale batteria</string>
+    <string name="status_bar_battery_percentage_default">Nascosta (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Dentro l\'icona</string>
+    <string name="status_bar_battery_percentage_text_next">Affianco all\'icona</string>
     <string name="double_tap_to_sleep_title">Doppio-tocco per spegnere</string>
     <string name="double_tap_to_sleep_summary">Doppio-tocco sulla status bar per spegnere lo schermo. Abilitato anche in lockscreen</string>
     <string name="status_bar_quick_qs_pulldown_title">Impostazioni rapide</string>
