@@ -19,6 +19,11 @@ import android.preference.PreferenceCategory;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import java.util.ArrayList;
+
+import com.android.settings.cyanogenmod.DisplayRotation;
+
+
 public class TweaksSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
@@ -29,12 +34,14 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
 	private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 	private static final String ADVANCED_REBOOT = "advanced_reboot";
 	private static final String KEY_BATTERY_LIGHT = "battery_light";
+	private static final String KEY_DISPLAY_ROTATION = "display_rotation";
 
         private SwitchPreference mScreenshotSound;
         private SwitchPreference mKillAppLongpressBack;
 	private SwitchPreference mAdvancedReboot;
 	private PreferenceScreen mBatteryPulse;
 	private PreferenceCategory mDevice;
+        private PreferenceScreen mDisplayRotationPreference;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -50,6 +57,9 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                 mScreenshotSound.setOnPreferenceChangeListener(this);
                 mScreenshotSound.setChecked(Settings.System.getInt(getContentResolver(),
                         Settings.System.SCREENSHOT_SOUND, 1) != 0);
+
+		mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
+		updateDisplayRotationPreferenceDescription();
 
 		mBatteryPulse = (PreferenceScreen) findPreference(KEY_BATTERY_LIGHT);
                 mBatteryPulse.setOnPreferenceChangeListener(this);
@@ -85,10 +95,59 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                 }
         }
 
+    private void updateDisplayRotationPreferenceDescription() {
+        if (mDisplayRotationPreference == null) {
+            // The preference was removed, do nothing
+            return;
+        }
+
+        // We have a preference, lets update the summary
+        boolean rotationEnabled = Settings.System.getInt(getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION, 0) != 0;
+
+        if (!rotationEnabled) {
+            mDisplayRotationPreference.setSummary(R.string.display_rotation_disabled);
+            return;
+        }
+
+        StringBuilder summary = new StringBuilder();
+        int mode = Settings.System.getInt(getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION_ANGLES,
+                DisplayRotation.ROTATION_0_MODE
+                | DisplayRotation.ROTATION_90_MODE
+                | DisplayRotation.ROTATION_270_MODE);
+        ArrayList<String> rotationList = new ArrayList<String>();
+        String delim = "";
+
+        if ((mode & DisplayRotation.ROTATION_0_MODE) != 0) {
+            rotationList.add("0");
+        }
+        if ((mode & DisplayRotation.ROTATION_90_MODE) != 0) {
+            rotationList.add("90");
+        }
+        if ((mode & DisplayRotation.ROTATION_180_MODE) != 0) {
+            rotationList.add("180");
+        }
+        if ((mode & DisplayRotation.ROTATION_270_MODE) != 0) {
+            rotationList.add("270");
+        }
+        for (int i = 0; i < rotationList.size(); i++) {
+            summary.append(delim).append(rotationList.get(i));
+            if ((rotationList.size() - i) > 2) {
+                delim = ", ";
+            } else {
+                delim = " & ";
+            }
+        }
+        summary.append(" " + getString(R.string.display_rotation_unit));
+        mDisplayRotationPreference.setSummary(summary);
+    }
+
         @Override
         public void onResume() {
                 super.onResume();
 		updatemBatterySummary();
+		updateDisplayRotationPreferenceDescription();
         }
 
         @Override

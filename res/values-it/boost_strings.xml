@@ -158,5 +158,16 @@
     <string name="lockscreen_enable_power_menu_title">Abilita riavvio avanzato</string>
     <string name="lockscreen_enable_power_menu_summary">Abilità/Disabilità menu spegnimento sulla schermata di sblocco sicura</string>
 
+    <!-- Rotation -->
+    <string name="display_rotation_title">Rotazione</string>
+    <string name="display_rotation_disabled">Disabilitata</string>
+    <string name="display_rotation_unit">gradi</string>
+    <string name="display_lockscreen_rotation_title">Ruota schermata di sblocco</string>
+    <string name="display_rotation_category_title">Modi di rotazione</string>
+    <string name="display_rotation_0_title">0 gradi</string>
+    <string name="display_rotation_90_title">90 gradi</string>
+    <string name="display_rotation_180_title">180 gradi</string>
+    <string name="display_rotation_270_title">270 gradi</string>
+
 </resources>
 
