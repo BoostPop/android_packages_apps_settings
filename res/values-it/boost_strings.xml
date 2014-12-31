@@ -124,6 +124,7 @@
     <string name="battery_light_full_color_title">Batteria carica</string>
 
     <string name="status_bar_clock">Ora e data</string>
+    <string name="status_bar_clock_summary">Cambia posizione, colore e stile</string>
     <string name="status_bar_clock_title">Stile ora e data</string>
     <string name="clock_title_enable">Allineamento</string>
     <string name="status_bar_show_clock_title">Mostra ora e data</string>

@@ -12,6 +12,7 @@
         <PreferenceScreen
             android:fragment="com.android.settings.slim.StatusBarClockStyle"
             android:key="clock_style_pref"
+            android:summary="@string/status_bar_clock_summary"
             android:title="@string/status_bar_clock" />
 
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
