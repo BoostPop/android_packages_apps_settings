@@ -72,6 +72,7 @@ import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.cyanogenmod.qs.QSTiles;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -112,9 +113,9 @@ import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
-import com.android.settings.boost.BoostSettings;
 import com.android.settings.WifiCallingSettings;
 import com.android.settings.boost.BoostSettings;
+import com.android.settings.cyanogenmod.DisplayRotation;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -307,7 +308,9 @@ public class SettingsActivity extends Activity
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),
             WifiCallingSettings.class.getName(),
-	    BoostSettings.class.getName()	
+	    BoostSettings.class.getName(),	
+	    DisplayRotation.class.getName(),
+            QSTiles.class.getName(),
     };
 
 
