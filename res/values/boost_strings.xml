@@ -41,7 +41,7 @@
     <string name="notifications_settings_title">Notifications</string>
     <string name="notifications_settings_summary">Customize your Nexus notifications</string>
     <string name="security_tweaks_title">Security</string>
-    <string name="security_tweaks_summary">Mod the some security settings</string>
+    <string name="security_tweaks_summary">Set your security settings</string>
     <string name="device_category_title">Device</string>
     <string name="system_category_title">System</string>
 
