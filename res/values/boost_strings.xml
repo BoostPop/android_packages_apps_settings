@@ -46,8 +46,8 @@
     <string name="system_category_title">System</string>
 
     <!-- build date-->
-    <string name="build_date">Boostpop build date</string>
-    <string name="build_date_default">2014-01-01-0000</string>
+    <string name="boost_version">Boostpop version</string>
+    <string name="boost_version_default">Unknown</string>
 
     <!-- VOLUME ROCKER -->
     <!-- Volume wake up -->

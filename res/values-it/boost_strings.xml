@@ -14,8 +14,8 @@
     <string name="general_string">Generale</string>
 
     <!-- build date-->
-    <string name="build_date">Data build Boostpop</string>
-    <string name="build_date_default">2014-01-01-0000</string>
+    <string name="boost_version">Versione Boostpop</string>
+    <string name="boost_version_default">Sconosciuta</string>
 
     <!-- Boost Settings Titles -->
     <string name="volume_rocker_title">Tasti Volume</string>
