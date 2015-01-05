@@ -170,5 +170,14 @@
     <string name="display_rotation_180_title">180 gradi</string>
     <string name="display_rotation_270_title">270 gradi</string>
 
+    <!-- Quick Settings -->
+    <string name="quick_settings_summary">Modifica quick settings</string>
+    <string name="show_tile_title">Nascondi/Mostra tiles</string>
+    <string name="qs_show_airplane_title">Modalità aereo</string>
+    <string name="qs_show_notifications_title">Notifiche</string>
+    <string name="qs_show_hotspot_title">Hotpost</string>
+    <string name="qs_show_cast_title">Condividi schermo</string>
+    <string name="qs_show_inversion_title">Inversione colori</string>
+
 </resources>
 

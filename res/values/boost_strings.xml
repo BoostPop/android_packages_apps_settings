@@ -212,5 +212,14 @@
     <string name="lockscreen_enable_power_menu_title">Power menu on secure lock screen</string>
     <string name="lockscreen_enable_power_menu_summary">Disable power menu on secure lock screens</string>
 
- 
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Quick settings</string>
+    <string name="quick_settings_summary">Modify quick settings appareance</string>
+    <string name="show_tile_title">Hide/Show tiles</string>
+    <string name="qs_show_airplane_title">Airplane Tile</string>
+    <string name="qs_show_notifications_title">Notification Tile</string>
+    <string name="qs_show_hotspot_title">Hotspot Tile</string>
+    <string name="qs_show_cast_title">Cast Tile</string>
+    <string name="qs_show_inversion_title">Inversion Tile</string>
+                  
 </resources>

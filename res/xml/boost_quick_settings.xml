@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/quick_settings_title" >
+
+    <PreferenceCategory
+	android:key="show_tile"
+	android:title="@string/show_tile_title" >
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
+                android:key="qs_show_airplane_tile"
+                android:title="@string/qs_show_airplane_title"
+                android:defaultValue="true" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
+                android:key="qs_show_notifications_tile"
+                android:title="@string/qs_show_notifications_title"
+                android:defaultValue="true" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
+                android:key="qs_show_cast_tile"
+                android:title="@string/qs_show_cast_title"
+                android:defaultValue="true" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
+                android:key="qs_show_hotspot_tile"
+                android:title="@string/qs_show_hotspot_title"
+                android:defaultValue="true" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
+                android:key="qs_show_inversion_tile"
+                android:title="@string/qs_show_inversion_title"
+                android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
