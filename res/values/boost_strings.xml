@@ -46,7 +46,7 @@
     <string name="system_category_title">System</string>
 
     <!-- build date-->
-    <string name="boost_version">Boostpop version</string>
+    <string name="boost_version">BoostPop version</string>
     <string name="boost_version_default">Unknown</string>
 
     <!-- VOLUME ROCKER -->
@@ -214,7 +214,7 @@
 
     <!-- Quick Settings -->
     <string name="quick_settings_title">Quick settings</string>
-    <string name="quick_settings_summary">Modify quick settings appareance</string>
+    <string name="quick_settings_summary">Modify quick settings appearance</string>
     <string name="show_tile_title">Hide/Show tiles</string>
     <string name="qs_show_airplane_title">Airplane Tile</string>
     <string name="qs_show_notifications_title">Notification Tile</string>
