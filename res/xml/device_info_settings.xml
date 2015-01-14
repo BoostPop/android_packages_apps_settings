@@ -136,6 +136,22 @@
                 android:title="@string/boost_version"
                 android:summary="@string/boost_version_default" />
 
+        <!-- GCC build info -->
+        <Preference android:key="sm_android"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/sm_android"
+                android:summary="@string/sm_android_default" />
+
+        <Preference android:key="sm_kernel"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/sm_kernel"
+                android:summary="@string/sm_kernel_default" />
+
+        <Preference android:key="sm_flags"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/sm_flags"
+                android:summary="@string/sm_flags_default" />
+
         <!-- SELinux status information -->
         <Preference android:key="selinux_status"
                 style="?android:preferenceInformationStyle"
