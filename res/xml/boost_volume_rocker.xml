@@ -19,12 +19,6 @@
         	android:persistent="false"
         	android:defaultValue="true" />
 
-       <!-- Link Volume Notification -->
-        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
-                android:key="volume_link_notification"
-                android:title="@string/link_volume_option_title" />
-
-
 	<!-- Adjust sound -->
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
 	        android:key="volume_adjust_sound"
