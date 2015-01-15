@@ -215,6 +215,7 @@ public class SettingsActivity extends Activity
             R.id.data_usage_settings,
             R.id.sim_settings,
             R.id.wireless_settings,
+            R.id.device_section,
             R.id.notification_settings,
             R.id.display_settings,
             R.id.storage_settings,

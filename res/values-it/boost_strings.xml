@@ -123,34 +123,6 @@
     <string name="battery_light_medium_color_title">Batteria media</string>
     <string name="battery_light_full_color_title">Batteria carica</string>
 
-    <string name="status_bar_clock">Ora e data</string>
-    <string name="status_bar_clock_title">Stile ora e data</string>
-    <string name="clock_title_enable">Allineamento</string>
-    <string name="status_bar_show_clock_title">Mostra ora e data</string>
-    <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">E\' attivo lo stile orario 24h</string>
-    <string name="enable_clock_weekday">Giorno della settimana</string>
-    <string name="enable_clock_weekday_summary">Giorno della settimana abbreviato prima dell\'ora</string>
-    <string name="right_clock">Ora a destra</string>
-    <string name="center_clock">Ora centrato</string>
-    <string name="dont_show">Non mostrare</string>
-    <string name="clock_date_display">Data</string>
-    <string name="clock_date_display_summary">Mostra data personalizzata prima dell\'ora</string>
-    <string name="clock_date_style">Stile data</string>
-    <string name="clock_date_format">Formato data</string>
-    <string name="clock_date_string_edittext_title">Utilizzare formato data MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Inserisci stringa</string>
-    <string name="am_pm_clock_normal">Dimensione font normale</string>
-    <string name="am_pm_clock_small">Dimensione font piccolo</string>
-    <string name="am_pm_clock_none">Non mostrare</string>
-    <string name="clock_date_display_none">Non mostrare</string>
-    <string name="clock_date_display_small">Dimensione font piccolo</string>
-    <string name="clock_date_display_normal">Dimensione font normale</string>
-    <string name="clock_date_style_normal">Normale</string>
-    <string name="clock_date_style_lowercase">Minuscolo</string>
-    <string name="clock_date_style_uppercase">Maiuscolo</string>
-    <string name="clock_date_format_custom">Formato java personalizzato</string>
-
     <string name="block_on_secure_keyguard_title">Disabilita impostazioni rapide</string>
     <string name="block_on_secure_keyguard_summary">Disabilità quick settings con schermata di sblocco sicura</string>
     <string name="unlock_quick_unlock_control_title">Sblocco veloce</string>
