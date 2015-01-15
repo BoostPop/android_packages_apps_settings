@@ -169,5 +169,19 @@
     <string name="status_bar_power_menu_action_screen_off">Spegni schermo - Menu riavvio</string>
     <string name="status_bar_power_menu_action_dialog">Menu riavvio - Spegni schermo</string>
 
+    <string name="status_bar_clock">Ora</string>
+    <string name="status_bar_clock_summary">Modifica l\'ora sulla barra di stato</string>
+    <string name="status_bar_clock_title">Modifica ora</string>
+    <string name="clock_title_enable">Allineamento</string>
+    <string name="status_bar_show_clock_title">Mostra ora</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">E\' attivo lo stile orario 24h</string>
+    <string name="right_clock">Ora a destra</string>
+    <string name="center_clock">Ora centrato</string>
+    <string name="dont_show">Non mostrare</string>
+    <string name="am_pm_clock_normal">Dimensione font normale</string>
+    <string name="am_pm_clock_small">Dimensione font piccolo</string>
+    <string name="am_pm_clock_none">Non mostrare</string>
+
 </resources>
 
