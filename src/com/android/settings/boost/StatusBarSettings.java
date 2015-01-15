@@ -21,8 +21,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
 
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+    private static final String STATUS_BAR_POWER_MENU = "status_bar_power_menu";
 
     private ListPreference mStatusBarBatteryShowPercent;
+    private ListPreference mStatusBarPowerMenu;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -37,6 +39,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
         mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
         mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
+
+        // status bar power menu
+        mStatusBarPowerMenu = (ListPreference) findPreference(STATUS_BAR_POWER_MENU);
+        mStatusBarPowerMenu.setOnPreferenceChangeListener(this);
+        int statusBarPowerMenu = Settings.System.getInt(getContentResolver(),
+                STATUS_BAR_POWER_MENU, 0);
+        mStatusBarPowerMenu.setValue(String.valueOf(statusBarPowerMenu));
+        mStatusBarPowerMenu.setSummary(mStatusBarPowerMenu.getEntry());
+
     }
 
     @Override
@@ -50,6 +61,18 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntries()[index]);
             return true;
         }
+        else if (preference == mStatusBarPowerMenu) {
+            String statusBarPowerMenu = (String) newValue;
+            int statusBarPowerMenuValue = Integer.parseInt(statusBarPowerMenu);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_POWER_MENU, statusBarPowerMenuValue);
+            int statusBarPowerMenuIndex = mStatusBarPowerMenu
+                    .findIndexOfValue(statusBarPowerMenu);
+            mStatusBarPowerMenu
+                    .setSummary(mStatusBarPowerMenu.getEntries()[statusBarPowerMenuIndex]);
+            return true;
+        }	
+
         return false;
     }
 }

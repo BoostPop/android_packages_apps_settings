@@ -191,5 +191,12 @@
     <string name="power_menu_lockdown_title">Blocca dispositivo</string>
     <string name="power_menu_sound_title">Comandi audio</string>
 
+    <!-- Power menu in expanded status bar -->
+    <string name="status_bar_power_menu_title">Menu riavvio in status bar espansa</string>
+    <string name="status_bar_power_menu_dialog_title">Imposta azione: al tocco - tieni premuto</string>
+    <string name="status_bar_power_menu_off">Disabilitato</string>
+    <string name="status_bar_power_menu_action_screen_off">Spegni schermo - Menu riavvio</string>
+    <string name="status_bar_power_menu_action_dialog">Menu riavvio - Spegni schermo</string>
+
 </resources>
 
