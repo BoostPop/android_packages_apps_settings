@@ -24,10 +24,14 @@
     <string name="navigation_bar_title">Barra navigazione</string>
     <string name="navigation_bar_summary">Personalizza barra navigazione</string>
     <string name="status_bar_summary">Modifica la status bar</string>
+    <string name="status_bar_summary">Modifica la barra di stato e la barra di stato espansa</string>
     <string name="notifications_settings_title">Notifiche</string>
     <string name="notifications_settings_summary">Personallizza le notifiche del tuo nexus</string>
     <string name="security_tweaks_title">Sicurezza</string>
     <string name="security_tweaks_summary">Modifica permessi e sicurezza telefono</string>
+    <string name="device_category_title">Dispositivo</string>
+    <string name="system_category_title">Sistema</string>
+    <string name="status_bar_category_title">Barra di stato</string>
 
     <string name="safe_headset_volume_title">Volume sicuro cuffie</string>
     <string name="safe_headset_volume_summary">Evita un volume elevato quando le cuffie vengono inserite</string>
@@ -142,7 +146,8 @@
     <string name="display_rotation_270_title">270 gradi</string>
 
     <!-- Quick Settings -->
-    <string name="quick_settings_summary">Modifica quick settings</string>
+    <string name="tiles_title">Quick settings tiles</string>
+    <string name="tiles_summary">Mostra/Nascondi quick settings tiles</string>
     <string name="show_tile_title">Nascondi/Mostra tiles</string>
     <string name="qs_show_airplane_title">Modalità aereo</string>
     <string name="qs_show_notifications_title">Notifiche</string>

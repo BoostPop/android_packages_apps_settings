@@ -37,13 +37,15 @@
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="navigation_bar_summary">Navigation bar customization</string>
     <string name="status_bar_title">Status bar</string>
-    <string name="status_bar_summary">Mod your status bar</string>
+    <string name="status_bar_summary">Modify status bar and expanded status bar</string>
     <string name="notifications_settings_title">Notifications</string>
     <string name="notifications_settings_summary">Customize your Nexus notifications</string>
     <string name="security_tweaks_title">Security</string>
     <string name="security_tweaks_summary">Set your security settings</string>
     <string name="device_category_title">Device</string>
     <string name="system_category_title">System</string>
+    <string name="status_bar_category_title">Status bar</string>
+    <string name="quick_settings_category_title">Quick settings</string>
 
     <!-- build date-->
     <string name="boost_version">BoostPop version</string>
@@ -178,8 +180,8 @@
     <string name="lockscreen_enable_power_menu_summary">Disable power menu on secure lock screens</string>
 
     <!-- Quick Settings -->
-    <string name="quick_settings_title">Quick settings</string>
-    <string name="quick_settings_summary">Modify quick settings appearance</string>
+    <string name="tiles_title">Quick settings tiles</string>
+    <string name="tiles_summary">Show/Hide quick settings tiles</string>
     <string name="show_tile_title">Hide/Show tiles</string>
     <string name="qs_show_airplane_title">Airplane Tile</string>
     <string name="qs_show_notifications_title">Notification Tile</string>
