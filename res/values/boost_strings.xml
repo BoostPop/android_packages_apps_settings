@@ -45,6 +45,7 @@
     <string name="device_category_title">Device</string>
     <string name="system_category_title">System</string>
     <string name="status_bar_category_title">Status bar</string>
+    <string name="clock_category_title">Clock</string>
     <string name="quick_settings_category_title">Quick settings</string>
 
     <!-- build date-->
@@ -214,5 +215,18 @@
 
     <string name="link_volume_option_title">Link ringtone &amp; notification volumes</string>
     <string name="notification_volume_option_title">Notification volume</string>
+
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_style_title">Clock style</string>
+    <string name="status_bar_clock_style_right">Right</string>
+    <string name="status_bar_clock_style_left">Left</string>
+    <string name="status_bar_clock_style_center">Center</string>
+    <string name="status_bar_clock_style_hidden">Hidden</string>
+
+    <string name="status_bar_am_pm_title">AM/PM style</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Small</string>
+    <string name="status_bar_am_pm_hidden">Hidden (default)</string>
                   
 </resources>

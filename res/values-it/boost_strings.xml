@@ -32,6 +32,7 @@
     <string name="device_category_title">Dispositivo</string>
     <string name="system_category_title">Sistema</string>
     <string name="status_bar_category_title">Barra di stato</string>
+    <string name="clock_category_title">Ora</string>
 
     <string name="safe_headset_volume_title">Volume sicuro cuffie</string>
     <string name="safe_headset_volume_summary">Evita un volume elevato quando le cuffie vengono inserite</string>
@@ -175,6 +176,19 @@
     <string name="status_bar_power_menu_off">Disabilitato</string>
     <string name="status_bar_power_menu_action_screen_off">Spegni schermo - Menu riavvio</string>
     <string name="status_bar_power_menu_action_dialog">Menu riavvio - Spegni schermo</string>
+
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_style_title">Stile ora</string>
+    <string name="status_bar_clock_style_right">Destra</string>
+    <string name="status_bar_clock_style_left">Sinistra</string>
+    <string name="status_bar_clock_style_center">Centro</string>
+    <string name="status_bar_clock_style_hidden">Nascosta</string>
+
+    <string name="status_bar_am_pm_title">Stile AM/PM</string>
+    <string name="status_bar_am_pm_info">Formato a 24 ore abilitato</string>
+    <string name="status_bar_am_pm_normal">Normale</string>
+    <string name="status_bar_am_pm_small">Piccolo</string>
+    <string name="status_bar_am_pm_hidden">Nascosto (default)</string>
 
 </resources>
 
