@@ -28,6 +28,7 @@
     <string name="status_bar_category_title">Barra di stato</string>
     <string name="device_category_title">Dispositivo</string>
     <string name="system_category_title">Sistema</string>
+    <string name="clock_category_title">Ora</string>
 
     <!-- others -->
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
@@ -90,5 +91,18 @@
 
     <!-- Battery light -->
     <string name="battery_light_settings">Led batteria</string>
+
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_style_title">Stile ora</string>
+    <string name="status_bar_clock_style_right">Destra</string>
+    <string name="status_bar_clock_style_left">Sinistra</string>
+    <string name="status_bar_clock_style_center">Centro</string>
+    <string name="status_bar_clock_style_hidden">Nascosta</string>
+    <string name="status_bar_am_pm_title">Stile AM/PM</string>
+    <string name="status_bar_am_pm_info">Formato a 24 ore abilitato</string>
+    <string name="status_bar_am_pm_normal">Normale</string>
+    <string name="status_bar_am_pm_small">Piccolo</string>
+    <string name="status_bar_am_pm_hidden">Nascosto (default)</string>
+
 </resources>
 
