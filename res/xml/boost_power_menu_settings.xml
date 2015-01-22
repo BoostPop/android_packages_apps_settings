@@ -51,9 +51,11 @@
         android:title="@string/power_menu_lockdown_title"
         android:defaultValue="false" />
 
+<!--
     <SwitchPreference
         android:key="silent"
         android:title="@string/power_menu_sound_title"
         android:defaultValue="true" />
+-->
 
 </PreferenceScreen>
