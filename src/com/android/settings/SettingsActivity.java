@@ -114,6 +114,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.boost.BoostSettings;
+import com.android.settings.boost.QuickSettings;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -301,7 +302,8 @@ public class SettingsActivity extends Activity
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),
 	    DisplayRotation.class.getName(),
-	    BoostSettings.class.getName()	
+	    BoostSettings.class.getName(),
+            QuickSettings.class.getName()
     };
 
 
