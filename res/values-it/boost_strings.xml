@@ -156,6 +156,7 @@
     <string name="show_tile_title">Nascondi/Mostra tiles</string>
     <string name="qs_show_airplane_title">Modalità aereo</string>
     <string name="qs_show_notifications_title">Notifiche</string>
+    <string name="qs_show_rotation_title">Rotazione</string>
     <string name="qs_show_hotspot_title">Hotpost</string>
     <string name="qs_show_cast_title">Condividi schermo</string>
     <string name="qs_show_inversion_title">Inversione colori</string>

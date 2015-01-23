@@ -12,6 +12,11 @@
                 android:defaultValue="true" />
 
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
+                android:key="qs_show_rotation_tile"
+                android:title="@string/qs_show_rotation_title"
+                android:defaultValue="true" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
                 android:key="qs_show_notifications_tile"
                 android:title="@string/qs_show_notifications_title"
                 android:defaultValue="true" />
