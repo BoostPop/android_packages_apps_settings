@@ -193,10 +193,7 @@
     <string name="qs_show_hotspot_title">Hotspot Tile</string>
     <string name="qs_show_cast_title">Cast Tile</string>
     <string name="qs_show_inversion_title">Inversion Tile</string>
-    <string name="qs_advanced_location_title">Advanced location quick settings</string>	
-    <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
     <string name="qs_show_rotation_title">Rotation Tile</string>
-
 
     <!-- Power menu -->
     <string name="power_menu_title">Power menu</string>

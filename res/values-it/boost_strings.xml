@@ -160,8 +160,6 @@
     <string name="qs_show_hotspot_title">Hotpost</string>
     <string name="qs_show_cast_title">Condividi schermo</string>
     <string name="qs_show_inversion_title">Inversione colori</string>
-    <string name="qs_advanced_location_title">Tile gelocalizzazione avanzato</string> 
-    <string name="qs_advanced_location_summary">Abilita settaggi avanzati per geolocalizzazione nei quick settings</string>
 
     <!-- Power Menu -->
     <string name="power_menu_title">Power menu</string>
