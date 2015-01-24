@@ -32,13 +32,11 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
 	private static final String KEY_DEVICE = "device_category";
 	private static final String SCREENSHOT_SOUND = "screenshot_sound";
 	private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
-	private static final String ADVANCED_REBOOT = "advanced_reboot";
 	private static final String KEY_BATTERY_LIGHT = "battery_light";
 	private static final String KEY_DISPLAY_ROTATION = "display_rotation";
 
         private SwitchPreference mScreenshotSound;
         private SwitchPreference mKillAppLongpressBack;
-	private SwitchPreference mAdvancedReboot;
 	private PreferenceScreen mBatteryPulse;
 	private PreferenceCategory mDevice;
         private PreferenceScreen mDisplayRotationPreference;
@@ -78,12 +76,6 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                 mKillAppLongpressBack.setChecked(Settings.Secure.getInt(getContentResolver(),
                         Settings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
 
-		// advanced reboot
-        	mAdvancedReboot = (SwitchPreference) findPreference(ADVANCED_REBOOT);
-        	mAdvancedReboot.setOnPreferenceChangeListener(this);
-        	int advancedReboot = Settings.Secure.getInt(getContentResolver(),
-        	        ADVANCED_REBOOT, 0);
-	        mAdvancedReboot.setChecked(advancedReboot != 0);
 	}
 
 	private void updatemBatterySummary() {
@@ -167,12 +159,7 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                         Settings.Secure.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
                         value ? 1 : 0);
                     return true;
-		} else if (preference == mAdvancedReboot) {
-            	    boolean value = (Boolean) objValue;
-            		Settings.Secure.putInt(getContentResolver(), ADVANCED_REBOOT,
-                	value ? 1 : 0);
-        	    return true;
-	        }
+		}
                 return false;
         }
 
