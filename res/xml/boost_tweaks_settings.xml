@@ -52,6 +52,13 @@
 		android:summary="@string/kill_app_longpress_back_summary"
                 android:defaultValue="true" />
 
+	<!-- clear-all dismiss all process -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="recents_clear_all_dismiss_all"
+            android:title="@string/recents_clear_all_dismiss_all_title"
+            android:summary="@string/recents_clear_all_dismiss_all_summary"
+            android:defaultValue="true" />
+
        </PreferenceCategory>
 
 </PreferenceScreen>
