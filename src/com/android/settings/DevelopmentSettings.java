@@ -50,7 +50,6 @@ import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.SearchIndexableResource;
@@ -79,8 +78,7 @@ import java.util.List;
  */
 public class DevelopmentSettings extends SettingsPreferenceFragment
         implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener,
-                OnPreferenceChangeListener, SwitchBar.OnSwitchChangeListener, Indexable,
-                OnPreferenceClickListener {
+                OnPreferenceChangeListener, SwitchBar.OnSwitchChangeListener, Indexable {
     private static final String TAG = "DevelopmentSettings";
 
     /**
@@ -214,9 +212,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private ListPreference mLogdSize;
     private ListPreference mTrackFrameTime;
     private ListPreference mShowNonRectClip;
-    private AnimationScalePreference mWindowAnimationScale;
-    private AnimationScalePreference mTransitionAnimationScale;
-    private AnimationScalePreference mAnimatorDurationScale;
+    private ListPreference mWindowAnimationScale;
+    private ListPreference mTransitionAnimationScale;
+    private ListPreference mAnimatorDurationScale;
     private ListPreference mOverlayDisplayDevices;
     private ListPreference mOpenGLTraces;
 
@@ -334,15 +332,15 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mWifiAggressiveHandover = findAndInitCheckboxPref(WIFI_AGGRESSIVE_HANDOVER_KEY);
         mWifiAllowScansWithTraffic = findAndInitCheckboxPref(WIFI_ALLOW_SCAN_WITH_TRAFFIC_KEY);
         mLogdSize = addListPreference(SELECT_LOGD_SIZE_KEY);
+
+        mWindowAnimationScale = addListPreference(WINDOW_ANIMATION_SCALE_KEY);
+        mTransitionAnimationScale = addListPreference(TRANSITION_ANIMATION_SCALE_KEY);
+        mAnimatorDurationScale = addListPreference(ANIMATOR_DURATION_SCALE_KEY);
         mOverlayDisplayDevices = addListPreference(OVERLAY_DISPLAY_DEVICES_KEY);
         mOpenGLTraces = addListPreference(OPENGL_TRACES_KEY);
         mSimulateColorSpace = addListPreference(SIMULATE_COLOR_SPACE);
         mUseNuplayer = findAndInitCheckboxPref(USE_NUPLAYER_KEY);
         mUSBAudio = findAndInitCheckboxPref(USB_AUDIO_KEY);
-
-        mWindowAnimationScale = findAndInitAnimationScalePreference(WINDOW_ANIMATION_SCALE_KEY);
-        mTransitionAnimationScale = findAndInitAnimationScalePreference(TRANSITION_ANIMATION_SCALE_KEY);
-        mAnimatorDurationScale = findAndInitAnimationScalePreference(ANIMATOR_DURATION_SCALE_KEY);
 
         mImmediatelyDestroyActivities = (CheckBoxPreference) findPreference(
                 IMMEDIATELY_DESTROY_ACTIVITIES_KEY);
@@ -378,14 +376,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             pref.setEnabled(false);
             mDisabledPrefs.add(pref);
         }
-    }
-
-    private AnimationScalePreference findAndInitAnimationScalePreference(String key) {
-        AnimationScalePreference pref = (AnimationScalePreference) findPreference(key);
-        pref.setOnPreferenceChangeListener(this);
-        pref.setOnPreferenceClickListener(this);
-        mAllPrefs.add(pref);
-        return pref;
     }
 
     private CheckBoxPreference findAndInitCheckboxPref(String key) {
@@ -1136,13 +1126,23 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             getActivity().getContentResolver(), Settings.Global.ALWAYS_FINISH_ACTIVITIES, 0) != 0);
     }
 
-    private void updateAnimationScaleValue(int which, AnimationScalePreference pref) {
+    private void updateAnimationScaleValue(int which, ListPreference pref) {
         try {
             float scale = mWindowManager.getAnimationScale(which);
             if (scale != 1) {
                 mHaveDebugSettings = true;
             }
-            pref.setScale(scale);
+            CharSequence[] values = pref.getEntryValues();
+            for (int i=0; i<values.length; i++) {
+                float val = Float.parseFloat(values[i].toString());
+                if (scale <= val) {
+                    pref.setValueIndex(i);
+                    pref.setSummary(pref.getEntries()[i]);
+                    return;
+                }
+            }
+            pref.setValueIndex(values.length-1);
+            pref.setSummary(pref.getEntries()[0]);
         } catch (RemoteException e) {
         }
     }
@@ -1153,8 +1153,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateAnimationScaleValue(2, mAnimatorDurationScale);
     }
 
-    private void writeAnimationScaleOption(int which, AnimationScalePreference pref,
-            Object newValue) {
+    private void writeAnimationScaleOption(int which, ListPreference pref, Object newValue) {
         try {
             float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 0.75f;
             mWindowManager.setAnimationScale(which, scale);
@@ -1296,16 +1295,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         } else {
             super.onActivityResult(requestCode, resultCode, data);
         }
-    }
-
-    @Override
-    public boolean onPreferenceClick(Preference preference) {
-        if (preference == mWindowAnimationScale ||
-                preference == mTransitionAnimationScale ||
-                preference == mAnimatorDurationScale) {
-            ((AnimationScalePreference) preference).click();
-        }
-        return false;
     }
 
     @Override
