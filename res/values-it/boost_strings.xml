@@ -192,7 +192,9 @@
     <string name="status_bar_am_pm_small">Piccolo</string>
     <string name="status_bar_am_pm_hidden">Nascosto (default)</string>
 
-    <!-- Ignore last app when clearing recents -->
+    <!-- Clear all -->
+    <string name="recents_clear_all_title">Mostra clear all in recents</string>
+    <string name="recents_clear_all_summary">Chiudi tutti i processi in esecuzione</string>
     <string name="recents_clear_all_dismiss_all_title">Chiudi tutti i processi in background</string>
     <string name="recents_clear_all_dismiss_all_summary">Scegli se il tasto in recenti chiude tutte i processi o lascia in esecuzione il processo in uso</string>
 

@@ -43,15 +43,23 @@
         <SwitchPreference
 		android:key="kill_app_longpress_back"
 		android:title="@string/kill_app_longpress_back"
-		android:summary="@string/kill_app_longpress_back_summary"/>
+		android:summary="@string/kill_app_longpress_back_summary"
                 android:defaultValue="true" />
+
+	<!-- Kill all -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="recents_clear_all_show"
+            android:title="@string/recents_clear_all_title"
+            android:summary="@string/recents_clear_all_summary"
+            android:defaultValue="true" />
 
 	<!-- clear-all dismiss all process -->
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="recents_clear_all_dismiss_all"
             android:title="@string/recents_clear_all_dismiss_all_title"
             android:summary="@string/recents_clear_all_dismiss_all_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            android:dependency="recents_clear_all_show"/>
 
        </PreferenceCategory>
 
