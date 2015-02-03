@@ -65,6 +65,9 @@
     <string name="display_rotation_90_title">90 degrees</string>
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
+    <!-- Clear all -->
+    <string name="recents_clear_all_title">Show Clear all button in recents</string>
+    <string name="recents_clear_all_summary">Tick to show or untick to hide the clear all button within the recent applications screen</string>
     <!-- Ignore last app when clearing recents -->
     <string name="recents_clear_all_dismiss_all_title">Clear all tasks</string>
     <string name="recents_clear_all_dismiss_all_summary">Choose whether to dismiss all tasks or ignore the foreground task</string>
