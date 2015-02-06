@@ -9,7 +9,16 @@
                 android:key="volume_wake_screen"
                 android:title="@string/volume_wake_title"
                 android:summary="@string/volume_wake_summary"
-                android:defaultValue="true" />
+                android:defaultValue="false"
+                android:disableDependentsState="true" />
+
+        <!-- Music control -->
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference 
+        	android:key="volbtn_music_controls"
+        	android:title="@string/volbtn_music_controls_title"
+        	android:summary="@string/volbtn_music_controls_summary"
+        	android:defaultValue="true"
+        	android:dependency="volume_wake_screen" />
 
 	<!-- Safe headset volume -->
 	<SwitchPreference
@@ -25,13 +34,6 @@
 	        android:title="@string/volume_key_adjust_sound_title"
 	        android:summary="@string/volume_key_adjust_sound_summary"	
                 android:defaultValue="true" />
-
-	<!-- Music control -->
-	<com.android.settings.cyanogenmod.SystemSettingSwitchPreference	
-            android:key="volbtn_music_controls"
-            android:title="@string/volbtn_music_controls_title"
-            android:summary="@string/volbtn_music_controls_summary"
-            android:defaultValue="true" />
 
 	<!-- Cursor control -->
     	<ListPreference

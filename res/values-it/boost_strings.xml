@@ -48,7 +48,7 @@
     <string name="volume_key_cursor_control_on">I tasti su/giù muovono il cursore a sinistra/destra</string>
     <string name="volume_key_cursor_control_on_reverse">I tasti su/giù muovono il cursore a destra/sinistra</string>
     <string name="volume_wake_title">Risveglio tasti volume</string>
-    <string name="volume_wake_summary">Spingi tasto volume per accendere il telefono</string>
+    <string name="volume_wake_summary">Spingi tasto volume per accendere il telefono. Sovrascrive i controlli tracce.</string>
     <string name="volbtn_music_controls_title">Controlli tracce</string>
     <string name="volbtn_music_controls_summary">A schermo spento, tieni premuto volume per cambiare traccia durante la riproduzione</string>
 
