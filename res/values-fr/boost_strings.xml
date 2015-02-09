@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- System Interface settings  -->
+    <string name="boost_settings">Boost paramètres</string>
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="attention">Attention</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="default_string">Default</string>
+    <string name="general_string">General</string>
+    <string name="font_size_sample">Sample</string>
+    <string name="add">Add</string>
+    <string name="choose_app">Choose app</string>
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">RAM</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
+    <!-- Boost Settings Titles -->
+    <string name="volume_rocker_title">Boutons de volume</string>
+    <string name="volume_rocker_summary">utilisation personnalisée des boutons de volume</string>
+    <string name="tweaks_settings_title">Boostez votre Nexus</string>
+    <string name="tweaks_settings_summary">Personnalisez votre Nexus</string>
+    <string name="tweaks_settings_title">Boostez votre Nexus</string>
+    <string name="navigation_bar_title">Barre de navigation</string>
+    <string name="navigation_bar_summary">Personnalisation de la barre de navigation</string>
+    <string name="status_bar_title">Barre de statut</string>
+    <string name="status_bar_summary">Modifier la barre de statut </string>
+    <string name="notifications_settings_title">Notifications</string>
+    <string name="notifications_settings_summary">Personnalisation des notifications</string>
+    <string name="security_tweaks_title">Securité</string>
+    <string name="security_tweaks_summary">réglages des paramètres de sécurité</string>
+    <string name="device_category_title">Appareil</string>
+    <string name="system_category_title">Système</string>
+    <string name="status_bar_category_title">Barre de statut</string>
+    <string name="clock_category_title">Horloge</string>
+    <string name="quick_settings_category_title">Paramètres rapides</string>
+
+    <!-- build date-->
+    <string name="boost_version"> Version de BoostPop</string>
+    <string name="boost_version_default">Unknown</string>
+
+    <!-- others -->
+    <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">Accepter tout les types de fichiers</string>
+
+    <!-- VOLUME ROCKER -->
+    <!-- Volume wake up -->
+    <string name="volume_wake_title">Réveil par les boutons de volume</string>
+    <string name="volume_wake_summary">L'appareil sort de veille lorsque vous appuyez sur les boutons volumes haut/bas. Remplace le contrôle de la musique par les boutons volume.</string>
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Volume du casque sécurisé</string>
+    <string name="safe_headset_volume_summary">Empêche les niveaux de volume trop forts lorsque le casque est branché.</string>
+    <string name="safe_headset_volume_warning_dialog_text">Une écoute prolongée à un volume élévé peut endommager votre ouï. Désactivez avec prudence</string>
+    <!-- Volume adjust sound -->
+    <string name="volume_key_adjust_sound_title">Son lors du réglage du volume</string>
+    <string name="volume_key_adjust_sound_summary">Joue un son lorsque vous ajustez le volume avec les boutons volume</string>
+    <!--- Volume key cursor control -->
+    <string name="volume_key_cursor_control_title">Contrôle du curseur avec les boutons volume</string>
+    <string name="volume_key_cursor_control_off">Désactivé</string>
+    <string name="volume_key_cursor_control_on">Les boutons hauts/bas déplacent le curseur de gauche à droite</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume haut/bas déplacent le curseur de droite à gauche</string>
+    <!-- Music control -->
+    <string name="volbtn_music_controls_title">Contrôle de la musique</string>
+    <string name="volbtn_music_controls_summary">Quand l'écran est éteint, un appui long sur les boutons de volume passe à la musique suivante/précédente</string>
+
+    <!-- TWEAKS  -->
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Son de capture d'écran</string>
+    <string name="screenshot_sound_summary">Joue un son quand une capture d'écran est prise</string>
+
+    <!-- Developer options - kill app long press back -->
+    <string name="kill_app_longpress_back">Bouton retour tue l'application</string>
+    <string name="kill_app_longpress_back_summary">Un appui long sur la touche retour tue l'application</string>
+
+    <!-- Display : Rotation  -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_disabled">Désactivée</string>
+    <string name="display_rotation_unit">degrés</string>
+    <string name="display_lockscreen_rotation_title">Roatation de l'écran de verrouillage</string>
+    <string name="display_rotation_category_title">Angles de rotation</string>
+    <string name="display_rotation_0_title">0 degrés</string>
+    <string name="display_rotation_90_title">90 degrés</string>
+    <string name="display_rotation_180_title">180 degrés</string>
+    <string name="display_rotation_270_title">270 degrés</string>
+
+    <!-- NAVIGATION BAR -->
+    <!-- Navigation Bar Height -->
+    <string name="navigation_bar_height">Taille de la barre de navigationt</string>
+    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_30">30dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">0dp (cachée)</string>
+
+    <!-- STATUS BAR -->
+    <!-- Status bar - Battery percentage -->  
+    <string name="status_bar_battery_percentage_title">Afficher le pourcentage de batterie</string>
+    <string name="status_bar_battery_percentage_dialog_title">Pourcentage de Batterie</string>
+    <string name="status_bar_battery_percentage_default">Caché (défaut)</string>
+    <string name="status_bar_battery_percentage_text_inside">Dans l'icône</string>
+    <string name="status_bar_battery_percentage_text_next">A coté de l'icône</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_to_sleep_title">Double appui pour mettre en veille</string>
+    <string name="double_tap_to_sleep_summary">Un double appui sur la barre d'état met l'appareil en veille</string>
+    <string name="status_bar_quick_qs_pulldown_title">Déroulement rapide</string>
+    <string name="status_bar_quick_qs_pulldown_summary">La partie droite de la barre d'état déroule les paramètres rapide</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Réglages de la LED</string>
+    <string name="pulse_speed_title">Durée d'impultion et vitesse</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Custom</string>
+    <string name="dialog_delete_title">Supprimer</string>
+    <string name="dialog_delete_message">Enlever l'application des réglages ?</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Toujours allumée</string>
+    <string name="pulse_length_very_short">Très court</string>
+    <string name="pulse_length_short">Court</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Long</string>
+    <string name="pulse_length_very_long">Très long</string>
+    <string name="pulse_speed_very_fast">Très rapide</string>
+    <string name="pulse_speed_fast">Rapide</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Lent</string>
+    <string name="pulse_speed_very_slow">Très lent</string>
+
+    <!-- Battery light settings -->
+    <string name="battery_light_title">Led de batterie</string>
+    <string name="battery_low_pulse_title">Clignoter si la batterie est faible</string>
+    <string name="battery_light_list_title">Couleurs</string>
+    <string name="battery_light_low_color_title">Batterie faible</string>
+    <string name="battery_light_medium_color_title">En charge</string>
+    <string name="battery_light_full_color_title">Chargée</string>
+
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">Led de notifictions</string>
+    <string name="notification_light_general_title">Général</string>
+    <string name="notification_light_applist_title">Applications</string>
+    <string name="notification_light_phonelist_title">Téléphone</string>
+    <string name="notification_light_use_custom">Valeurs personnalisées</string>
+    <string name="notification_light_default_value">Défaut</string>
+    <string name="notification_light_missed_call_title">Appel manqué</string>
+    <string name="notification_light_voicemail_title">Boîte vocale</string>
+
+    <!-- Security -->
+    <string name="block_on_secure_keyguard_title">Désactiver sur l'écran de verrouillage</string>
+    <string name="block_on_secure_keyguard_summary">Désactive les paramètres rapide sur l'écran de verrouillage</string>   
+    <!--Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Déverrouillage rapide</string>
+    <string name="unlock_quick_unlock_control_summary">Déverrouile automatiquement quand le corect code PIN/mot de passe est entré</string>
+    <!-- Hide power menu on lockscreen -->
+    <string name="power_category">Menu d'alimentation</string>
+    <string name="lockscreen_enable_power_menu_title">Menu d'alimentation sur l'écran de verrouillage</string>
+    <string name="lockscreen_enable_power_menu_summary">Désactiver le menu d'alimentation sur l'écran de verrouillage</string>
+
+    <!-- Quick Settings -->
+    <string name="tiles_title">tuiles des paramètres rapide</string>
+    <string name="tiles_summary">Montrer/cacher les tuiles des paramètres rapide</string>
+    <string name="show_tile_title">Montrer/cacher les tuiles</string>
+    <string name="qs_show_airplane_title">Mode avion</string>
+    <string name="qs_show_notifications_title">Notification</string>
+    <string name="qs_show_hotspot_title">Point d'accès</string>
+    <string name="qs_show_cast_title">Cast</string>
+    <string name="qs_show_inversion_title">Inversion des couleurs</string>
+    <string name="qs_show_rotation_title">Rotation</string>
+
+    <!-- Power menu -->
+    <string name="power_menu_title">Menu d'alimentation</string>
+    <string name="power_menu_summary">Personnaliser le menu d'alimentation</string>
+    <string name="power_menu_power_title">Eteindre</string>
+    <string name="power_menu_reboot_title">Menu de redémarrage</string>
+    <string name="power_menu_screenshot_title">Capture d'écran</string>
+    <string name="power_menu_airplane_title">Mode avion</string>
+    <string name="power_menu_users_title">Changement d'utilisateur</string>
+    <string name="power_menu_settings_title">Raccourcis vers les paramètres</string>
+    <string name="power_menu_lockdown_title">Verrouiler l'appareil</string>
+    <string name="power_menu_sound_title">Panneau du son</string>
+
+
+    <!-- Status bar power menu -->
+    <string name="status_bar_power_menu_title">Menu d'alimentation dans la barre d'état</string>
+    <string name="status_bar_power_menu_dialog_title">Réglages des actions par apui/appui long</string>
+    <string name="status_bar_power_menu_off">Désactiver</string>
+    <string name="status_bar_power_menu_action_screen_off">Eteindre l'écran - Menu d'alimentation</string>
+    <string name="status_bar_power_menu_action_dialog">Menu d'alimentation - Eteindre l'écran</string>
+
+    <string name="link_volume_option_title">Lier le volume sonneries des appels &amp; le volume des notification</string>
+    <string name="notification_volume_option_title">Volume des notifications</string>
+
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_style_title">Style de l'horloge</string>
+    <string name="status_bar_clock_style_right">Droite</string>
+    <string name="status_bar_clock_style_left">Gauche</string>
+    <string name="status_bar_clock_style_center">Centre</string>
+    <string name="status_bar_clock_style_hidden">Caché</string>
+    <string name="status_bar_am_pm_title">Style AM/PM</string>
+    <string name="status_bar_am_pm_info">L'horloge 24 heures est activée</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Petit</string>
+    <string name="status_bar_am_pm_hidden">Caché (default)</string>
+
+    <!-- Clear all -->
+    <string name="recents_clear_all_title">Montrer le bouton tout effacer dans l'onglet récent</string>
+    <string name="recents_clear_all_summary">Cocher pour montrer ou décocher pour cacher le bouton tout effacer dans l'onglet des applications récentes</string>
+    <string name="recents_clear_all_dismiss_all_title">Effacer tout le processus d'arrière-plan</string>
+    <string name="recents_clear_all_dismiss_all_summary">Choisissez s'il faut tout effacer ou ignorer la tâche au premier plan</string>
+
+    <!-- Expanded Desktop -->
+    <string name="power_menu_expanded_desktop">Bureau étendu</string>
+    <string name="power_menu_expanded_desktop_summary">Réglages du bureau étendu par applications</string>
+    <string name="expanded_hide_nothing">Ne rien cacher</string>
+    <string name="expanded_hide_status">Cacher la barre de statut</string>
+    <string name="expanded_hide_navigation">Cacher la barre de navigation</string>
+    <string name="expanded_hide_both">Cacher les deux</string>
+    <string name="expanded_nothing_to_show">Pour ajouter un réglage de bureau étendu par applications, décochez activer pour tout</string>
+    <string name="expanded_desktop_state">Expanded state</string>
+    <string name="expanded_enabled_for_all">Activer pour tout</string>
+    <string name="expanded_user_configurable">Configurable par l'utilisateur</string>
+
+</resources>
