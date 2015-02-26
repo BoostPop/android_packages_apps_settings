@@ -48,7 +48,7 @@
     <string name="volume_key_cursor_control_on">I tasti su/giù muovono il cursore a sinistra/destra</string>
     <string name="volume_key_cursor_control_on_reverse">I tasti su/giù muovono il cursore a destra/sinistra</string>
     <string name="volume_wake_title">Risveglio tasti volume</string>
-    <string name="volume_wake_summary">Spingi tasto volume per accendere il telefono</string>
+    <string name="volume_wake_summary">Spingi tasto volume per accendere il telefono. Sovrascrive i controlli tracce.</string>
     <string name="volbtn_music_controls_title">Controlli tracce</string>
     <string name="volbtn_music_controls_summary">A schermo spento, tieni premuto volume per cambiare traccia durante la riproduzione</string>
 
@@ -70,8 +70,6 @@
     <string name="status_bar_battery_percentage_text_next">Affianco all\'icona</string>
     <string name="double_tap_to_sleep_title">Doppio-tocco per spegnere</string>
     <string name="double_tap_to_sleep_summary">Doppio-tocco sulla status bar per spegnere lo schermo. Abilitato anche in lockscreen</string>
-    <string name="status_bar_quick_qs_pulldown_title">Impostazioni rapide</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Il bordo destro della barra di stato mostra i Quick Settings</string>
 
     <string name="app_notification_show_on_keyguard_title">Notifiche schermata di sblocco</string>
     <string name="app_notification_show_on_keyguard_summary">Mostra notifiche app sulla schermata di sblocco</string>
@@ -201,6 +199,29 @@
     <!-- Doze pulse (ambient display) notification timeout -->
     <string name="doze_timeout_title">Ambient display timeout schermo</string>
     <string name="doze_timeout_summary">Tempo schermo acceso durante ambient display</string>
+
+    <!-- Expanded Desktop -->
+    <string name="power_menu_expanded_desktop">Desktop espanso</string>
+    <string name="power_menu_expanded_desktop_summary">Configurazione per-app per desktop espanso</string>
+    <string name="expanded_hide_nothing">Non nascondere</string>
+    <string name="expanded_hide_status">Nascondi status bar</string>
+    <string name="expanded_hide_navigation">Nascondi barra navigazione</string>
+    <string name="expanded_hide_both">Nascondi entrambe</string>
+    <string name="expanded_nothing_to_show">Per aggiungere una configurazione per-app per desktop espanso, abilita "Abilita per tutti" su off</string>
+    <string name="expanded_desktop_state">Desktop espanso</string>
+    <string name="expanded_enabled_for_all">Abilita per tutti</string>
+    <string name="expanded_user_configurable">Configurabile</string>
+
+    <!-- Swap volume buttons when the screen is rotated -->
+    <string name="swap_volume_buttons_title">Segui rotazione</string>
+    <string name="swap_volume_buttons_summary">I tasti volume seguono l\'orientamento dello schermo</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Impostazioni rapide</string>
+    <string name="summary_quick_pulldown">Scorri verso il basso su un lato della barra di stato per mostrare i Quick Settings</string>
+    <string name="quick_pulldown_off">Disattivato</string>
+    <string name="quick_pulldown_left">Sinistro</string>
+    <string name="quick_pulldown_right">Destro</string>
 
 </resources>
 

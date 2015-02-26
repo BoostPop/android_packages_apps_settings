@@ -11,6 +11,9 @@ import android.text.format.DateFormat;
 import android.view.View;
 
 import com.android.settings.R;
+import java.util.Locale;
+import android.text.TextUtils;
+import android.view.View;
 import com.android.settings.SettingsPreferenceFragment;
 
 import android.database.ContentObserver;
@@ -27,11 +30,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_POWER_MENU = "status_bar_power_menu";
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
+    private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
 
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mStatusBarPowerMenu;
     private ListPreference mStatusBarClock;
     private ListPreference mStatusBarAmPm;
+    private ListPreference mQuickPulldown;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -74,6 +79,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setOnPreferenceChangeListener(this);
         }
 
+	mQuickPulldown = (ListPreference) findPreference(PRE_QUICK_PULLDOWN);
+	mQuickPulldown.setOnPreferenceChangeListener(this);
+	int statusQuickPulldown = Settings.System.getInt(getContentResolver(),
+		Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);	
+	mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
 
     }
 
@@ -123,8 +133,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarPowerMenu
                     .setSummary(mStatusBarPowerMenu.getEntries()[statusBarPowerMenuIndex]);
             return true;
-        }	
-
+	} else if (preference == mQuickPulldown) {
+            int statusQuickPulldown = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
+                    statusQuickPulldown);
+            return true;
+	}
         return false;
-    }
+   }
+
 }
