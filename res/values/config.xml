@@ -37,4 +37,9 @@
 
     <!-- The duration (in milliseconds) of activity transitions -->
     <integer name="setup_wizard_transition_duration">300</integer>
+
+    <!-- does the device have multi color led support or only
+         a fixed set of led colors -->
+    <bool name="config_has_multi_color_led">true</bool>
+
 </resources>
