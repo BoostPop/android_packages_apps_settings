@@ -76,6 +76,14 @@
             android:id="@+id/device_section"
             android:title="@string/header_category_device" >
 
+        <!-- Boost  -->
+        <dashboard-tile
+                android:id="@+id/boost_settings"
+                android:title="@string/boost_settings"
+                android:fragment="com.android.settings.boost.BoostSettings"
+                android:icon="@drawable/ic_settings_boost"
+                />
+
         <!-- Home -->
         <dashboard-tile
                 android:id="@+id/home_settings"

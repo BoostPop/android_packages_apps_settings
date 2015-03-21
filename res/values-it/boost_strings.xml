@@ -5,4 +5,11 @@
     <string name="boost_version">Versione BoostPop</string>
     <string name="boost_version_default">Unknown</string>
 
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="attention">Attenzione</string>
+    <string name="enabled">Abilitato</string>
+    <string name="default_string">Default</string>
+
 </resources>
