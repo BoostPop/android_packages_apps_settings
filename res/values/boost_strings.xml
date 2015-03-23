@@ -34,6 +34,12 @@
     <!-- Music control -->
     <string name="volbtn_music_controls_title">Playback control</string>
     <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
+    <!-- Swap volume buttons when the screen is rotated -->
+    <string name="swap_volume_buttons_title">Match rotation</string>
+    <string name="swap_volume_buttons_summary">Adjust volume buttons action based on current rotation</string>
+    <!-- Volume adjust sound -->
+    <string name="volume_key_adjust_sound_title">Volume key adjustment sound</string>
+    <string name="volume_key_adjust_sound_summary">Play sound when adjusting volume with volume keys</string>
 
     <!-- TWEAKS  -->
     <!-- Screenshot sound -->
@@ -53,9 +59,5 @@
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">0dp (hide)</string>
-
-    <!-- Swap volume buttons when the screen is rotated -->
-    <string name="swap_volume_buttons_title">Match rotation</string>
-    <string name="swap_volume_buttons_summary">Adjust volume buttons action based on current rotation</string>
 
 </resources>
