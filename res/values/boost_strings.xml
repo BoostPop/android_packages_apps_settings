@@ -31,6 +31,8 @@
     <string name="status_bar_summary">Modify status bar and expanded status bar</string>
     <string name="status_bar_category_title">Status bar</string>
     <string name="quick_settings_category_title">Quick settings</string>
+    <string name="device_category_title">Device</string>
+    <string name="system_category_title">System</string>
 
     <!-- VOLUME ROCKER -->
     <!-- Volume wake up -->
@@ -50,6 +52,20 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+    <!-- Developer options - kill app long press back -->
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
+    <!-- Display : Rotation  -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_disabled">Disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_lockscreen_rotation_title">Rotate lock screen</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+
 
     <!-- NAVIGATION BAR -->
     <!-- Navigation Bar Height -->

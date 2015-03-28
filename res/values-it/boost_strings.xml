@@ -25,6 +25,8 @@
     <string name="status_bar_summary">Modifica la status bar</string>
     <string name="status_bar_summary">Modifica la barra di stato e la barra di stato espansa</string>
     <string name="status_bar_category_title">Barra di stato</string>
+    <string name="device_category_title">Dispositivo</string>
+    <string name="system_category_title">Sistema</string>
 
     <!-- VOLUME ROCKER-->
     <string name="volume_wake_title">Risveglio tasti volume</string>
@@ -39,6 +41,20 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Suono cattura schermo</string>
     <string name="screenshot_sound_summary">Emetti un suono quando si esegue uno screenshot</string>
+
+    <string name="kill_app_longpress_back">Kill app </string>
+    <string name="kill_app_longpress_back_summary">Chiudi l\'app corrente tenendo premuto il tasto indietro</string>
+
+    <!-- Rotation -->
+    <string name="display_rotation_title">Rotazione</string>
+    <string name="display_rotation_disabled">Disabilitata</string>
+    <string name="display_rotation_unit">gradi</string>
+    <string name="display_lockscreen_rotation_title">Ruota schermata di sblocco</string>
+    <string name="display_rotation_category_title">Modi di rotazione</string>
+    <string name="display_rotation_0_title">0 gradi</string>
+    <string name="display_rotation_90_title">90 gradi</string>
+    <string name="display_rotation_180_title">180 gradi</string>
+    <string name="display_rotation_270_title">270 gradi</string>
 
     <string name="navigation_bar_height">Altezza barra di navigazione</string>
 

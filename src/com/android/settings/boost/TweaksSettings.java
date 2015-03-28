@@ -17,14 +17,16 @@ import android.util.Log;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.android.settings.cyanogenmod.DisplayRotation;
+
 public class TweaksSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
         private static final String TAG = "Tweaks";
 
-	private static final String SCREENSHOT_SOUND = "screenshot_sound";
+	private static final String KEY_DISPLAY_ROTATION = "display_rotation";
 
-        private SwitchPreference mScreenshotSound;
+	private PreferenceScreen mDisplayRotationPreference;	
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -32,17 +34,63 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
 
                 addPreferencesFromResource(R.xml.boost_tweaks_settings);
 
-		// === Screenshot sound ===
+		mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
+		updateDisplayRotationPreferenceDescription();
 
-	        mScreenshotSound = (SwitchPreference) findPreference(SCREENSHOT_SOUND);
-                mScreenshotSound.setOnPreferenceChangeListener(this);
-                mScreenshotSound.setChecked(Settings.System.getInt(getContentResolver(),
-                        Settings.System.SCREENSHOT_SOUND, 1) != 0);
         }
+
+    private void updateDisplayRotationPreferenceDescription() {
+        if (mDisplayRotationPreference == null) {
+            // The preference was removed, do nothing
+            return;
+        }
+
+        // We have a preference, lets update the summary
+        boolean rotationEnabled = Settings.System.getInt(getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION, 0) != 0;
+
+        if (!rotationEnabled) {
+            mDisplayRotationPreference.setSummary(R.string.display_rotation_disabled);
+            return;
+        }
+
+        StringBuilder summary = new StringBuilder();
+        int mode = Settings.System.getInt(getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION_ANGLES,
+                DisplayRotation.ROTATION_0_MODE
+                | DisplayRotation.ROTATION_90_MODE
+                | DisplayRotation.ROTATION_270_MODE);
+        java.util.ArrayList<String> rotationList = new java.util.ArrayList<String>();
+        String delim = "";
+
+        if ((mode & DisplayRotation.ROTATION_0_MODE) != 0) {
+            rotationList.add("0");
+        }
+        if ((mode & DisplayRotation.ROTATION_90_MODE) != 0) {
+            rotationList.add("90");
+        }
+        if ((mode & DisplayRotation.ROTATION_180_MODE) != 0) {
+            rotationList.add("180");
+        }
+        if ((mode & DisplayRotation.ROTATION_270_MODE) != 0) {
+            rotationList.add("270");
+        }
+        for (int i = 0; i < rotationList.size(); i++) {
+            summary.append(delim).append(rotationList.get(i));
+            if ((rotationList.size() - i) > 2) {
+                delim = ", ";
+            } else {
+                delim = " & ";
+            }
+        }
+        summary.append(" " + getString(R.string.display_rotation_unit));
+        mDisplayRotationPreference.setSummary(summary);
+    }
 
         @Override
         public void onResume() {
                 super.onResume();
+		updateDisplayRotationPreferenceDescription();
         }
 
         @Override
@@ -51,14 +99,8 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
                 return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
 
-	// === Screenshot sound ===
         public boolean onPreferenceChange(Preference preference, Object objValue) {
-	        if (preference == mScreenshotSound) {
-        	    boolean value = (Boolean) objValue;
-            		Settings.System.putInt(getContentResolver(), SCREENSHOT_SOUND,
-                    	value ? 1 : 0);
-            	return true;
-        	}
+        	// add code here
         return false;		
 
         }
