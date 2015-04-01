@@ -15,6 +15,12 @@
                 android:summary="@string/screenshot_sound_summary"
                 android:defaultValue="true" />
 
+	<!-- Battery light -->
+        <PreferenceScreen
+                android:key="battery_light"
+                android:title="@string/battery_light_settings"
+                android:fragment="org.omnirom.omnigears.batterylight.BatteryLightSettings" />
+
 	<!-- Display Rotatation -->
         <PreferenceScreen
             android:key="display_rotation"

@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
@@ -25,14 +26,23 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
         private static final String TAG = "Tweaks";
 
 	private static final String KEY_DISPLAY_ROTATION = "display_rotation";
+        private static final String KEY_CHARGING_LIGHT = "charging_light";
 
 	private PreferenceScreen mDisplayRotationPreference;	
+        private Preference mChargingLight;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
 
                 addPreferencesFromResource(R.xml.boost_tweaks_settings);
+
+	        mChargingLight = (Preference) findPreference(KEY_CHARGING_LIGHT);
+	        if (mChargingLight != null
+	                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+	            getPreferenceScreen().removePreference(mChargingLight);
+		}
 
 		mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
 		updateDisplayRotationPreferenceDescription();
@@ -102,6 +112,5 @@ public class TweaksSettings extends SettingsPreferenceFragment implements
         public boolean onPreferenceChange(Preference preference, Object objValue) {
         	// add code here
         return false;		
-
         }
 }	 

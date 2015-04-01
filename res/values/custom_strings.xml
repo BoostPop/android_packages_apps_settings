@@ -44,6 +44,8 @@
     <string name="keyguard_quick_unlock_summary_pin">Unlock automatically when correct PIN is entered</string>
     <string name="keyguard_quick_unlock_summary_password">Unlock automatically when correct password is entered</string>
 
+    <string name="color_picker_dialog_title">Color</string>
+
     <!-- Battery light settings  -->
     <string name="battery_light_enable">Enable</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
