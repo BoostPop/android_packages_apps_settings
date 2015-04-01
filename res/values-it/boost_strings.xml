@@ -67,6 +67,11 @@
     <string name="quick_pulldown_off">Disattivato</string>
     <string name="quick_pulldown_left">Sinistro</string>
     <string name="quick_pulldown_right">Destro</string>
+    <string name="status_bar_battery_percentage_title">Mostra percentuale batteria</string>
+    <string name="status_bar_battery_percentage_dialog_title">Percentuale batteria</string>
+    <string name="status_bar_battery_percentage_default">Nascosta (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Dentro l\'icona</string>
+    <string name="status_bar_battery_percentage_text_next">Affianco all\'icona</string>
 
 </resources>
 
