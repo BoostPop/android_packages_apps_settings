@@ -23,8 +23,33 @@
     <string name="storage_menu_options">Avanzate</string>
     <string name="storage_title_options">Opzioni archivio</string>
     <string name="no_media_notification_title">Notifica rimozione archivio esterno</string>
-    <string name="no_media_notification_summary">Mostra quando l\'archivio esterno èrimosso</string>
+    <string name="no_media_notification_summary">Mostra quando l\'archivio esterno viene rimosso</string>
     <string name="mount_notification_title">Notifica quando montato</string>
     <string name="mount_notification_summary">Mostra un notifica di progresso per l\'archivio esterno</string>
 
+    <string name="zen_mode_none_category">No interruzioni</string>
+    <string name="zen_mode_alarms">Permetti allarmi</string>
+
+    <!-- Unaccounted and overcounted battery stats -->
+    <string name="show_unac_and_overcounted_stats_title">Mostra statistiche non incluse</string>
+    <string name="show_unac_and_overcounted_stats_summary">Mostra nelle statisiche batteria l\'uso di sistema non incluso.</string>
+
+    <!-- Keyguard: quick unlock -->
+    <string name="keyguard_quick_unlock">Sblocco rapido</string>
+    <string name="keyguard_quick_unlock_summary_pin">Sblocca automaticamente quando è inserio il PIN corretto</string>
+    <string name="keyguard_quick_unlock_summary_password">Sblocca automaticamente quando è inserita la password corretta</string>
+
+    <!-- Battery light settings  -->
+    <string name="battery_light_enable">Abilitato</string>
+    <string name="battery_low_pulse_title">Lamepeggia a livello basso batteria</string>
+    <string name="battery_light_list_title">Colori</string>
+    <string name="battery_light_low_color_title">Batteria scarica</string>
+    <string name="battery_light_medium_color_title">In carica</string>
+    <string name="battery_light_full_color_title">Carica parziale (90%)</string>
+    <string name="battery_light_really_full_color_title">Carica completa (100%)</string>
+    <string name="edit_battery_settings">Modifica settaggi batteria</string>
+    <string name="notification_light_general_title">Generale</string>
+    <string name="led_color_green">Verde</string>
+    <string name="led_color_red">Rosso</string>
+    <string name="led_color_blue">Blu</string>
 </resources>
