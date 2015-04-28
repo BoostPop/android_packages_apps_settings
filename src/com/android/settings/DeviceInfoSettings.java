@@ -111,10 +111,15 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 	// let use boost version for a while setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 	setValueSummary(KEY_BOOST_VERSION, "ro.boost.version");
         findPreference(KEY_SM_AND).setEnabled(true);
-        findPreference(KEY_SM_KERNEL).setEnabled(true);
+        setValueSummary(KEY_SM_AND, "ro.sm.android");
+	if (!getFormattedKernelVersion().toLowerCase().contains("sabermod")){
+		getPreferenceScreen().removePreference(findPreference(KEY_SM_KERNEL));
+	} else {
+		findPreference(KEY_SM_KERNEL).setEnabled(true);
+  	        setValueSummary(KEY_SM_KERNEL, "ro.sm.kernel");	
+	}
         findPreference(KEY_SM_FLAGS).setEnabled(true);
         setValueSummary(KEY_SM_AND, "ro.sm.android");
-        setValueSummary(KEY_SM_KERNEL, "ro.sm.kernel");
         setValueSummary(KEY_SM_FLAGS, "ro.sm.flags");
 
         if (!SELinux.isSELinuxEnabled()) {
