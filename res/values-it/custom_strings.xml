@@ -30,6 +30,11 @@
     <string name="zen_mode_none_category">No interruzioni</string>
     <string name="zen_mode_alarms">Permetti allarmi</string>
 
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Connetti volumi suoneria e notifiche</string>
+    <string name="notification_volume_option_title">Volume notifiche</string>
+    <string name="ring_notification_volume_option_tile">Volume suoneria e notifiche</string>
+
     <!-- Unaccounted and overcounted battery stats -->
     <string name="show_unac_and_overcounted_stats_title">Mostra statistiche non incluse</string>
     <string name="show_unac_and_overcounted_stats_summary">Mostra nelle statisiche batteria l\'uso di sistema non incluso.</string>
