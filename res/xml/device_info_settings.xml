@@ -131,16 +131,22 @@
                 android:title="@string/build_number"
                 android:summary="@string/device_info_default"/>
                 
+        <!-- SELinux status information -->
+        <Preference android:key="selinux_status"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/selinux_status"
+                android:summary="@string/selinux_status_enforcing"/>
+
         <!-- Boost version -->
         <Preference android:key="boost_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/boost_version"
                 android:summary="@string/boost_version_default" />
 
-        <!-- SELinux status information -->
-        <Preference android:key="selinux_status"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/selinux_status"
-                android:summary="@string/selinux_status_enforcing"/>
+	<!-- Boost Banner -->
+        <PreferenceScreen android:key="boostbanner"
+                          android:enabled="false"
+                          android:layout="@layout/boostbanner_row"
+                          android:selectable="false" />
 
 </PreferenceScreen>
