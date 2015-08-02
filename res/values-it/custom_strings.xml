@@ -64,5 +64,13 @@
     <!-- Warning for Adb over Network -->
     <string name="adb_over_network_warning">ATTENZIONE: Quandon ADB over network è abilitato, il tuo telefono non èprotetto da intrusioni sulle connessioni, incluso il traffico dati GSM!\n\nUsa questa opzione solo quando sei connesso un network sicuro.\n\nVuoi davvero abilitare questa funzione?</string>
 
+    <!-- Lock screen rotation -->
+    <string name="display_lockscreen_rotation_title">Schermata di sblocco</string>
+    <!-- Lock screen settings -->
+    <string name="lockscreen_settings_title">Schermata di sblocco</string>
+    <!-- Lock screen wallpaper -->
+   <string name="lockscreen_wallpaper_title">Sfondo</string>
+   <string name="lockscreen_wallpaper_set_title">Imposta sfondo della schermata di sblocco</string>
+   <string name="lockscreen_wallpaper_clear_title">Resetta sfondo schermata di sblocco</string>
 
 </resources>

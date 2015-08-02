@@ -222,6 +222,10 @@ public class SecuritySettings extends SettingsPreferenceFragment
             }
         }
 
+        if (!mLockPatternUtils.isLockScreenDisabled()) {
+            addPreferencesFromResource(R.xml.security_settings_more);
+        }
+
         if (mIsPrimary) {
             if (LockPatternUtils.isDeviceEncryptionEnabled()) {
                 // The device is currently encrypted.
