@@ -47,7 +47,7 @@ public class QSTiles extends Fragment implements
     };
 
     private static final String QS_DEFAULT_ORDER =
-            "wifi,bt,cell,airplane,rotation,flashlight,location,cast";
+            "wifi,bt,cell,airplane,rotation,flashlight,location,cast,inversion,hotspot,sync,screen_off,notifications,ScreenshotTile,adb_network,nfc,immersive,usb_tether";
 
     private DraggableGridView mDraggableGridView;
     private View mAddDeleteTile;
